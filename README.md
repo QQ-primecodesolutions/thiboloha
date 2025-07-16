@@ -31,6 +31,8 @@ thiboloha/
 ├── .htaccess               # SPA routing support (for React)
 └── README.md               # This file
 
+```
+
 # Thiboloha Special School Website - Complete Site Structure
 
 ## 🏠 Homepage (Completed)
@@ -252,7 +254,7 @@ thiboloha/
 ### School Details
 - **Name**: Thiboloha Special School
 - **Full Title**: Resource Centre for Learners with Barriers to Learning and Development
-- **Physical Address**: 98 Motebang Street, Phuthadijhaba, Witsieshoek
+- **Physical Address**: 98 Motebang Street, Phuthaditjhaba, Witsieshoek
 - **Postal Address**: P.O. Box 829, Witsieshoek, 9870
 - **Province**: Free State, South Africa
 
@@ -315,4 +317,5 @@ thiboloha/
 - Local directory listings
 - Community event participation
 - Partnership announcements
+
 
