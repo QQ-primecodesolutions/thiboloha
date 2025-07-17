@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Programs - Thiboloha Special School | Comprehensive Special Needs Education</title>
+    <meta name="description" content="Explore Thiboloha's four specialized programs: Deaf, Blind, Autistic, and Intellectual Barriers education. 50 years of excellence in special needs education with 100% NSC pass rates.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #1e3a8a;
+            --secondary-green: #16a085;
+            --accent-gold: #f39c12;
+            --light-gray: #f8f9fa;
+            --dark-gray: #2c3e50;
+            --text-muted: #6c757d;
+            --deaf-theme: #4a90e2;
+            --blind-theme: #9b59b6;
+            --autism-theme: #e74c3c;
+            --intellectual-theme: #16a085;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+        }
+        
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-blue);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        /* Header Styles */
+        .header-top {
+            background: var(--primary-blue);
+            color: white;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+        
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: var(--dark-gray) !important;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--primary-blue) !important;
+        }
+        
+        /* Page Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-green) 50%, var(--accent-gold) 100%);
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="200" cy="200" r="60" fill="rgba(255,255,255,0.1)"/><circle cx="800" cy="300" r="80" fill="rgba(255,255,255,0.05)"/><rect x="600" y="600" width="100" height="100" rx="10" fill="rgba(255,255,255,0.08)"/><path d="M100,800 Q300,700 500,800 Q700,900 900,800" stroke="rgba(255,255,255,0.1)" stroke-width="3" fill="none"/></svg>');
+            animation: float 25s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(1deg); }
+        }
+        
+        .page-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .breadcrumb {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 15px;
+            border-radius: 25px;
+            margin-bottom: 2rem;
+        }
+        
+        .breadcrumb-item a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+        }
+        
+        .breadcrumb-item.active {
+            color: white;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--accent-gold);
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .text-center .section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+        }
+        
+        /* Program Cards */
+        .program-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            margin-bottom: 2rem;
+            height: 100%;
+            position: relative;
+        }
+        
+        .program-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+        }
+        
+        .program-header {
+            padding: 2rem;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .program-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="10" fill="white"/><circle cx="80" cy="80" r="15" fill="white"/></svg>');
+        }
+        
+        .program-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .program-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .program-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .deaf-header {
+            background: linear-gradient(135deg, var(--deaf-theme), #2980b9);
+        }
+        
+        .blind-header {
+            background: linear-gradient(135deg, var(--blind-theme), #8e44ad);
+        }
+        
+        .autism-header {
+            background: linear-gradient(135deg, var(--autism-theme), #c0392b);
+        }
+        
+        .intellectual-header {
+            background: linear-gradient(135deg, var(--intellectual-theme), #138d75);
+        }
+        
+        .program-body {
+            padding: 2rem;
+        }
+        
+        .program-stats {
+            background: var(--light-gray);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-row:last-child {
+            margin-bottom: 0;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        
+        .stat-value {
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+        
+        .program-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .program-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+        }
+        
+        .program-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .program-features i {
+            color: var(--secondary-green);
+            margin-right: 0.5rem;
+            width: 16px;
+        }
+        
+        .btn-program {
+            background: var(--primary-blue);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .btn-program:hover {
+            background: var(--secondary-green);
+            transform: translateY(-2px);
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Overview Grid */
+        .overview-item {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .overview-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .overview-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+            color: white;
+        }
+        
+        .approach-icon {
+            background: var(--accent-gold);
+        }
+        
+        .support-icon {
+            background: var(--secondary-green);
+        }
+        
+        .outcome-icon {
+            background: var(--primary-blue);
+        }
+        
+        .excellence-icon {
+            background: var(--autism-theme);
+        }
+        
+        /* Statistics Section */
+        .stats-section {
+            background: var(--primary-blue);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Comparison Table */
+        .comparison-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table table {
+            margin: 0;
+        }
+        
+        .comparison-table th {
+            background: var(--primary-blue);
+            color: white;
+            padding: 1rem;
+            border: none;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            vertical-align: middle;
+        }
+        
+        .comparison-table tbody tr:hover {
+            background: var(--light-gray);
+        }
+        
+        .program-badge {
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .deaf-badge { background: var(--deaf-theme); }
+        .blind-badge { background: var(--blind-theme); }
+        .autism-badge { background: var(--autism-theme); }
+        .intellectual-badge { background: var(--intellectual-theme); }
+        
+        /* Call to Action */
+        .cta-section {
+            background: var(--secondary-green);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .btn-cta {
+            background: var(--accent-gold);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px 10px;
+        }
+        
+        .btn-cta:hover {
+            background: #e67e22;
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .btn-outline-cta {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 13px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px 10px;
+        }
+        
+        .btn-outline-cta:hover {
+            background: white;
+            color: var(--secondary-green);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .program-card {
+                margin-bottom: 2rem;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+        
+        /* Accessibility improvements */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-blue: #000080;
+                --secondary-green: #006400;
+                --dark-gray: #000000;
+            }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content link -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <!-- Header Top Bar -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <span>Tel: (058) 713 0048 / 713 2821</span>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <i class="fas fa-envelope me-2"></i>
+                    <span>thiboloha@lantic.net</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/" aria-label="Thiboloha Special School Homepage">
+                <img src="/assets/images/logo.png" alt="Thiboloha Special School Logo" class="img-fluid">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="programsDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+                            <li><a class="dropdown-item" href="deaf-learners">Deaf Learners</a></li>
+                            <li><a class="dropdown-item" href="blind-learners">Blind Learners</a></li>
+                            <li><a class="dropdown-item" href="autistic-learners">Autistic Learners</a></li>
+                            <li><a class="dropdown-item" href="intellectual-barriers">Intellectual Barriers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions<admissions.html>
+                    <admissions.htmli>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Programs</li>
+                    </ol>
+                </nav>
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-3 fw-bold mb-4">Our Specialized Programs</h1>
+                        <p class="lead fs-4 mb-4">Four comprehensive programs serving learners with diverse needs under one roof. Fifty years of excellence in special needs education with proven results and 100% NSC pass rates.</p>
+                        <div class="hero-buttons">
+                            <a href="#programs" class="btn-cta">Explore Programs</a>
+                            <a href="admissions.html" class="btn-outline-cta">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Overview Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Comprehensive Special Needs Education</h2>
+                        <p class="section-subtitle">The only institution in the region providing specialized education for four different disability categories</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon approach-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h5>Individualized Approach</h5>
+                            <p>Every learner receives personalized education plans tailored to their unique abilities, needs, and learning style.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon support-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h5>Comprehensive Support</h5>
+                            <p>Multidisciplinary teams including teachers, therapists, social workers, and specialists provide holistic support.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon outcome-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h5>Proven Outcomes</h5>
+                            <p>100% NSC pass rates and successful alumni in universities, employment, and independent living demonstrate our effectiveness.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon excellence-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h5>50 Years Excellence</h5>
+                            <p>Five decades of experience in special needs education, continuously innovating and improving our approaches.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Statistics Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">Specialized Programs</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">NSC Pass Rate</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">60+</div>
+                            <div class="stat-label">Successful Alumni</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">50</div>
+                            <div class="stat-label">Years of Service</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Programs Section -->
+        <section class="content-section" id="programs">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Our Four Specialized Programs</h2>
+                        <p class="section-subtitle">Each program is designed with specific methodologies and support systems</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="program-card">
+                            <div class="program-header deaf-header">
+                                <div class="program-icon">
+                                    <i class="fas fa-hands"></i>
+                                </div>
+                                <h3 class="program-title">Deaf Learners Program</h3>
+                                <p class="program-subtitle">SASL Education & Academic Excellence</p>
+                            </div>
+                            <div class="program-body">
+                                <div class="program-stats">
+                                    <div class="stat-row">
+                                        <span class="stat-label">Education Span:</span>
+                                        <span class="stat-value">Preprimary - FET (13 years)</span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span class="stat-label">Primary Language:</span>
+                                        <span class="stat-value">South African Sign Language</span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span class="stat-label">2024 Bachelor Passes:</span>
+                                        <span class="stat-value">75%</span>
+                                    </div>
+                                </div>
+                                
+                                <ul class="program-features">
+                                    <li><i class="fas fa-check"></i>Complete SASL immersion curriculum</li>
+                                    <li><i class="fas fa-check"></i>Technical skills: Welding, woodworking</li>
+                                    <li><i class="fas fa-check"></i>100% NSC pass rate (2011-2024)</li>
+                                    <li><i class="fas fa-check"></i>University preparation pathway</li>
+                                    <li><i class="fas fa-check"></i>Deaf culture integration</li>
+                                </ul>
+                                
+                                <a href="programs/deaf-program.html" class="btn-program">Explore Deaf Program</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="program-card">
+                            <div class="program-header blind-header">
+                                <div class="program-icon">
+                                    <i class="fas fa-braille"></i>
+                                </div>
+                                <h3 class="program-title">Blind Learners Program</h3>
+                                <p class="program-subtitle">Braille Education & Independence Training</p>
+                            </div>
+                            <div class="program-body">
+                                <div class="program-stats">
+                                    <div class="stat-row">
+                                        <span class="stat-label">Education Span:</span>
+                                        <span class="stat-value">Preprimary - FET (9 years)</span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span class="stat-label">Literacy Method:</span>
+                                        <span class="stat-value">Braille & Adaptive Technology</span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span class="stat-label">Independence Focus:</span>
+                                        <span class="stat-value">Mobility & Life Skills</span>
+                                    </div>
+                                </div>
+                                
+                                <ul class="program-features">
+                                    <li><i class="fas fa-check"></i>Comprehensive Braille literacy</li>
+                                    <li><i class="fas fa-check"></i>Orientation & mobility training</li>
+                                    <li><i class="fas fa-check"></i>Adaptive technology integration</li>
+                                    <li><i class="fas fa-check"></i>Daily living skills mastery</li>
+                                    <li><i class="fas fa-check"></i>Traditional crafts training</li>
+                                </ul>
+                                
+                                <a href="programs/blind-program.html" class="btn-program">Explore Blind Program</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="program-card">
+                            <div class="program-header autism-header">
+                                <div class="program-icon">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                </div>
+                                <h3 class="program-title">Autistic Learners Program</h3>
+                                <p class="program-subtitle">Structured Learning & Sensory Support</p>
+                            </div>
+                            <div class="program-body">
+                                <div class="program-stats">
+                                    <div class="stat-row">
+                                        <span class="stat-label">Program Structure:</span>
+                                        <span class="stat-value">Level 1 - Skills Level 3</span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span class="stat-label">Class Ratio:</span>
+                                        <span class="stat-value">1:6 Teacher-Student</span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span class="stat-label">Approach:</span>
+                                        <span class="stat-value">Individualized Education Plans</span>
+                                    </div>
+                                </div>
+                                
+                                <ul class="program-features">
+                                    <li><i class="fas fa-check"></i>Structured, predictable environment</li>
+                                    <li><i class="fas fa-check"></i>Visual learning supports</li>
+                                    <li><i class="fas fa-check"></i>Sensory integration therapy</li>
+                                    <li><i class="fas fa-check"></i>Communication development</li>
+                                    <li><i class="fas fa-check"></i>Positive behavior support</li>
+                                </ul>
+                                
+                                <a href="programs/autistic-program.html" class="btn-program">Explore Autism Program</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="program-card">
+                            <div class="program-header intellectual-header">
+                                <div class="program-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h3 class="program-title">Intellectual Barriers Program</h3>
+                                <p class="program-subtitle">Life Skills & Community Integration</p>
+                            </div>
+                            <div class="program-body">
+                                <div class="program-stats">
+                                    <div class="stat-row">
+                                        <span class="stat-label">Program Structure:</span>
+                                        <span class="stat-value">6 Ability-Based Levels</span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span class="stat-label">Focus Area:</span>
+                                        <span class="stat-value">Practical Life Skills</span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span class="stat-label">Outcome Goal:</span>
+                                        <span class="stat-value">Independent Living</span>
+                                    </div>
+                                </div>
+                                
+                                <ul class="program-features">
+                                    <li><i class="fas fa-check"></i>Individualized pacing</li>
+                                    <li><i class="fas fa-check"></i>Functional academics</li>
+                                    <li><i class="fas fa-check"></i>Vocational training</li>
+                                    <li><i class="fas fa-check"></i>Creative arts & crafts</li>
+                                    <li><i class="fas fa-check"></i>Community integration skills</li>
+                                </ul>
+                                
+                                <a href="programs/intellectual-program.html" class="btn-program">Explore Intellectual Program</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Program Comparison -->
+        <section class="content-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Program Comparison</h2>
+                        <p class="section-subtitle">Understanding the unique features and approaches of each program</p>
+                    </div>
+                </div>
+                
+                <div class="comparison-table">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Aspect</th>
+                                    <th>Deaf Learners</th>
+                                    <th>Blind Learners</th>
+                                    <th>Autistic Learners</th>
+                                    <th>Intellectual Barriers</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Primary Focus</strong></td>
+                                    <td>Academic Excellence via SASL</td>
+                                    <td>Independence via Braille</td>
+                                    <td>Structure & Communication</td>
+                                    <td>Life Skills & Community</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Education Span</strong></td>
+                                    <td>Preprimary - FET (13 years)</td>
+                                    <td>Preprimary - FET (9 years)</td>
+                                    <td>Level-based progression</td>
+                                    <td>6 Ability-based levels</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Teaching Method</strong></td>
+                                    <td>SASL immersion</td>
+                                    <td>Tactile & adaptive tech</td>
+                                    <td>Visual supports & structure</td>
+                                    <td>Practical, hands-on learning</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Key Skills</strong></td>
+                                    <td>Technical trades</td>
+                                    <td>Mobility & independence</td>
+                                    <td>Social & communication</td>
+                                    <td>Vocational & daily living</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Post-School Outcomes</strong></td>
+                                    <td>Universities & skilled trades</td>
+                                    <td>Higher education & crafts</td>
+                                    <td>Supported employment</td>
+                                    <td>Independent living & work</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Class Size</strong></td>
+                                    <td>Standard class sizes</td>
+                                    <td>Small specialized groups</td>
+                                    <td>1:6 teacher ratio</td>
+                                    <td>Individualized pacing</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Success Showcase -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Success Across All Programs</h2>
+                        <p class="section-subtitle">Alumni achievements demonstrating the effectiveness of our specialized approaches</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="overview-item text-start">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="program-badge deaf-badge me-3">Deaf Program</span>
+                                <h5 class="mb-0">Academic Excellence</h5>
+                            </div>
+                            <p><strong>Mohapi Tsholo</strong> - Graduated 2013, earned a Degree in Journalism from University of Pretoria, demonstrating that deaf learners can excel in higher education.</p>
+                            <p><strong>Letseleha Kgopiso</strong> - B.Ed (UFS) graduate who returned as a teacher at Thiboloha, inspiring the next generation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="overview-item text-start">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="program-badge blind-badge me-3">Blind Program</span>
+                                <h5 class="mb-0">Independence Achievement</h5>
+                            </div>
+                            <p><strong>Multiple graduates</strong> have mastered computer skills with SANCB, demonstrating successful integration of adaptive technology.</p>
+                            <p>Alumni showcase successful transition to independent living and continued education in various fields.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="overview-item text-start">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="program-badge autism-badge me-3">Autism Program</span>
+                                <h5 class="mb-0">Communication Breakthroughs</h5>
+                            </div>
+                            <p>Families report significant improvements in communication skills, social interaction, and behavioral management.</p>
+                            <p>Successful transitions between program levels with measurable progress in independence and social skills.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="overview-item text-start">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="program-badge intellectual-badge me-3">Intellectual Program</span>
+                                <h5 class="mb-0">Life Skills Mastery</h5>
+                            </div>
+                            <p>Graduates successfully managing independent households, running small businesses, and contributing meaningfully to their communities.</p>
+                            <p>Strong focus on practical skills leads to real-world success and community integration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Support Services -->
+        <section class="content-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Comprehensive Support Services</h2>
+                        <p class="section-subtitle">Shared resources and specialized support across all programs</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon support-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <h5>Professional Support Team</h5>
+                            <p>Social workers, audiologists, school nurse, and specialized teaching staff provide comprehensive care across all programs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon approach-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h5>Residential Facilities</h5>
+                            <p>Safe, supervised hostel accommodation allows learners from distant areas to access specialized education.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon outcome-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h5>Family Partnership</h5>
+                            <p>Regular family training, support groups, and collaborative planning ensure continuity between school and home.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon excellence-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h5>District Partnership</h5>
+                            <p>Strong collaboration with education district provides curriculum support, teacher development, and resource sharing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon support-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h5>Transition Planning</h5>
+                            <p>Comprehensive preparation for post-school life including employment placement, higher education guidance, and independent living support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Admission Process -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">How to Apply</h2>
+                        <p class="section-subtitle">Simple steps to begin your child's journey with us</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon approach-icon">
+                                <span style="font-size: 1.5rem; font-weight: bold;">1</span>
+                            </div>
+                            <h5>Initial Contact</h5>
+                            <p>Contact our admissions office to discuss your child's needs and schedule an initial consultation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon support-icon">
+                                <span style="font-size: 1.5rem; font-weight: bold;">2</span>
+                            </div>
+                            <h5>Assessment</h5>
+                            <p>Comprehensive evaluation by our multidisciplinary team to determine appropriate program placement.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon outcome-icon">
+                                <span style="font-size: 1.5rem; font-weight: bold;">3</span>
+                            </div>
+                            <h5>Program Placement</h5>
+                            <p>Matching your child with the most appropriate program based on their individual needs and abilities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="overview-item">
+                            <div class="overview-icon excellence-icon">
+                                <span style="font-size: 1.5rem; font-weight: bold;">4</span>
+                            </div>
+                            <h5>Enrollment</h5>
+                            <p>Complete enrollment process and begin your child's personalized education journey with ongoing family support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="display-4 fw-bold mb-4">Ready to Begin Your Child's Journey?</h2>
+                        <p class="lead mb-5">
+                            Discover which of our specialized programs is the perfect fit for your child. Our experienced team is here to guide you through every step of the process and answer all your questions.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="admissions.html" class="btn-cta">Start Application Process</a>
+                            <a href="contact.html" class="btn-cta">Schedule a Visit</a>
+                            <a href="about.html" class="btn-outline-cta">Learn More About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--dark-gray); color: white; padding: 60px 0 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Contact Information</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>
+                        P.O. Box 829<br>
+                        Witsieshoek, 9870<br>
+                        Free State, South Africa</p>
+                        
+                        <p><i class="fas fa-phone me-2"></i>
+                        (058) 713 0048 / 713 2821</p>
+                        
+                        <p><i class="fas fa-envelope me-2"></i>
+                        thiboloha@lantic.net</p>
+                    </address>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/" style="color: rgba(255,255,255,0.8); text-decoration: none;">Home</a></li>
+                        <li class="mb-2"><a href="/about" style="color: rgba(255,255,255,0.8); text-decoration: none;">About Us</a></li>
+                        <li class="mb-2"><a href="/programs" style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">Programs</a></li>
+                        <li class="mb-2"><a href="/admissions" style="color: rgba(255,255,255,0.8); text-decoration: none;">Admissions</a></li>
+                        <li class="mb-2"><a href="/gallery" style="color: rgba(255,255,255,0.8); text-decoration: none;">Gallery</a></li>
+                        <li class="mb-2"><a href="/news" style="color: rgba(255,255,255,0.8); text-decoration: none;">News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Our Programs</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/programs/deaf-learners" style="color: var(--deaf-theme); text-decoration: none;">Deaf Learners</a></li>
+                        <li class="mb-2"><a href="/programs/blind-learners" style="color: var(--blind-theme); text-decoration: none;">Blind Learners</a></li>
+                        <li class="mb-2"><a href="/programs/autistic-learners" style="color: var(--autism-theme); text-decoration: none;">Autistic Learners</a></li>
+                        <li class="mb-2"><a href="/programs/intellectual-barriers" style="color: var(--intellectual-theme); text-decoration: none;">Intellectual Barriers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Follow Us</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" aria-label="Facebook" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="small">Stay connected for updates and success stories from our amazing learners.</p>
+                </div>
+            </div>
+            
+            <hr style="margin: 2rem 0; border-color: rgba(255,255,255,0.2);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Thiboloha Special School. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <a href="/privacy" style="color: rgba(255,255,255,0.8); margin-right: 2rem;">Privacy Policy</a>
+                        <a href="/accessibility" style="color: rgba(255,255,255,0.8);">Accessibility Statement</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Stats counter animation
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            const targets = [4, 100, 60, 50];
+            
+            statNumbers.forEach((stat, index) => {
+                const target = targets[index];
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    
+                    if (index === 1) {
+                        stat.textContent = Math.floor(current) + '%';
+                    } else if (index === 2) {
+                        stat.textContent = Math.floor(current) + '+';
+                    } else {
+                        stat.textContent = Math.floor(current);
+                    }
+                }, 50);
+            });
+        }
+        
+        // Intersection Observer for stats animation
+        const statsSection = document.querySelector('.stats-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+        
+        // Card hover effects and animations
+        const cards = document.querySelectorAll('.program-card, .overview-item');
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            cardObserver.observe(card);
+        });
+        
+        // Enhanced button interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.btn-cta, .btn-outline-cta, .btn-program');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('/')) {
+                        this.style.opacity = '0.7';
+                        setTimeout(() => {
+                            this.style.opacity = '1';
+                        }, 200);
+                    }
+                });
+                
+                // Add ripple effect
+                btn.addEventListener('click', function(e) {
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.width = ripple.style.height = size + 'px';
+                    ripple.style.left = x + 'px';
+                    ripple.style.top = y + 'px';
+                    ripple.classList.add('ripple');
+                    
+                    this.style.position = 'relative';
+                    this.style.overflow = 'hidden';
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+        });
+        
+        // Add CSS for ripple effect
+        const style = document.createElement('style');
+        style.textContent = `
+            .ripple {
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255,255,255,0.3);
+                transform: scale(0);
+                animation: ripple-animation 0.6s linear;
+                pointer-events: none;
+            }
+            
+            @keyframes ripple-animation {
+                to {
+                    transform: scale(2);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

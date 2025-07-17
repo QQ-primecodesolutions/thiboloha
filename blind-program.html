@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blind Learners Program - Thiboloha Special School | Braille Education Excellence</title>
+    <meta name="description" content="Comprehensive blind education with Braille literacy, mobility training, and adaptive technology. Empowering visually impaired learners from preprimary to FET.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/blind-style.css">
+    <link href="assets/css/deafstyle.css" rel="stylesheet" />
+    </head>
+<body>
+    <!-- Skip to main content link -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <!-- Header Top Bar -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <span>Tel: (058) 713 0048 / 713 2821</span>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <i class="fas fa-envelope me-2"></i>
+                    <span>thiboloha@lantic.net</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Thiboloha Special School Homepage">
+                <img src="/assets/images/logo.png" alt="Thiboloha Special School Logo" class="img-fluid">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="programs.html" id="programsDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+                            <li><a class="dropdown-item" href="deaf-program.html">Deaf Learners</a></li>
+                            <li><a class="dropdown-item" href="blind-program.html">Blind Learners</a></li>
+                            <li><a class="dropdown-item" href="autistic-program.html">Autistic Learners</a></li>
+                            <li><a class="dropdown-item" href="intellectual-program.html">Intellectual Barriers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Program Hero Section -->
+    <section class="program-hero">
+        <div class="container">
+            <div class="program-hero-content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="programs.html">Programs</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Blind Learners</li>
+                    </ol>
+                </nav>
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="program-icon-large">
+                            <i class="fas fa-braille"></i>
+                        </div>
+                        <h1 class="display-3 fw-bold mb-4">Blind Learners Program</h1>
+                        <p class="lead fs-4 mb-4">Comprehensive education for visually impaired learners using Braille literacy, mobility training, and adaptive technology to achieve academic excellence and independence.</p>
+                        <div class="hero-buttons">
+                            <a href="#curriculum" class="btn-cta">View Curriculum</a>
+                            <a href="admissions.html" class="btn-outline-cta">Apply Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="/assets/images/blind-program-hero.jpg" alt="Blind students learning with Braille" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Program Overview -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <h2 class="section-title">Program Overview</h2>
+                        <p class="section-subtitle">Empowering independence through excellence in blind education</p>
+                    </div>
+                </div>
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="mb-4" style="color: var(--blind-theme);">Why Choose Our Blind Program?</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Braille Excellence:</strong> Comprehensive Braille literacy from foundation level
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Mobility Training:</strong> Orientation and mobility skills for independence
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Adaptive Technology:</strong> Screen readers and assistive technology integration
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Academic Success:</strong> Full CAPS curriculum adapted for visual learners
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Technical Skills:</strong> Practical training for career readiness
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Life Skills Focus:</strong> Daily living skills and independence training
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="/assets/images/braille-learning.jpg" alt="Student reading Braille" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Statistics Section -->
+        <section class="stat-highlight">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">NSC Pass Rate</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">9</div>
+                            <div class="stat-label">Years of Education</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Successful Alumni</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">50</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Phases -->
+        <section class="content-section" id="curriculum">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Education Phases</h2>
+                        <p class="section-subtitle">Structured progression from early learning to career preparation</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="phase-card">
+                            <div class="phase-header">
+                                <div class="phase-title">Preprimary Phase</div>
+                                <div class="phase-age">Ages 4-7 years</div>
+                                <div class="phase-grade">Foundation Learning</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--blind-theme);">Early Development & Orientation</h5>
+                            <p class="mb-3">Foundation phase focusing on basic Braille introduction, sensory development, and spatial awareness in a supportive environment.</p>
+                            
+                            <h6 class="mb-2">Key Learning Areas:</h6>
+                            <div class="curriculum-item">
+                                <div class="curriculum-icon"><i class="fas fa-braille"></i></div>
+                                <div>
+                                    <strong>Pre-Braille Skills</strong><br>
+                                    <small>Tactile awareness and finger dexterity development</small>
+                                </div>
+                            </div>
+                            <div class="curriculum-item">
+                                <div class="curriculum-icon"><i class="fas fa-map"></i></div>
+                                <div>
+                                    <strong>Orientation & Mobility</strong><br>
+                                    <small>Basic spatial awareness and safe movement</small>
+                                </div>
+                            </div>
+                            <div class="curriculum-item">
+                                <div class="curriculum-icon"><i class="fas fa-hand-paper"></i></div>
+                                <div>
+                                    <strong>Sensory Development</strong><br>
+                                    <small>Enhancing remaining senses for learning</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="phase-card">
+                            <div class="phase-header">
+                                <div class="phase-title">Foundation Phase</div>
+                                <div class="phase-age">Grade R-3</div>
+                                <div class="phase-grade">Academic Foundation</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--blind-theme);">Braille Literacy & Core Subjects</h5>
+                            <p class="mb-3">Building strong foundations in Braille reading and writing, alongside adapted delivery of core CAPS subjects.</p>
+                            
+                            <h6 class="mb-2">CAPS Subjects:</h6>
+                            <div class="curriculum-item">
+                                <div class="curriculum-icon"><i class="fas fa-book-open"></i></div>
+                                <div>
+                                    <strong>Braille Literacy</strong><br>
+                                    <small>Grade 1 and Grade 2 Braille reading and writing</small>
+                                </div>
+                            </div>
+                            <div class="curriculum-item">
+                                <div class="curriculum-icon"><i class="fas fa-calculator"></i></div>
+                                <div>
+                                    <strong>Mathematics</strong><br>
+                                    <small>Tactile mathematics using specialized materials</small>
+                                </div>
+                            </div>
+                            <div class="curriculum-item">
+                                <div class="curriculum-icon"><i class="fas fa-language"></i></div>
+                                <div>
+                                    <strong>Languages</strong><br>
+                                    <small>Sesotho and English through Braille</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="phase-card">
+                            <div class="phase-header">
+                                <div class="phase-title">Intermediate Phase</div>
+                                <div class="phase-age">Grade 4-6</div>
+                                <div class="phase-grade">Skill Development</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--blind-theme);">Advanced Academics & Technology</h5>
+                            <p class="mb-3">Introduction of Natural Science and Technology alongside continued development of Braille skills and adaptive technology use.</p>
+                            
+                            <h6 class="mb-2">CAPS Subjects:</h6>
+                            <div class="curriculum-item">
+                                <div class="curriculum-icon"><i class="fas fa-laptop"></i></div>
+                                <div>
+                                    <strong>Adaptive Technology</strong><br>
+                                    <small>Screen readers and computer skills introduction</small>
+                                </div>
+                            </div>
+                            <div class="curriculum-item">
+                                <div class="curriculum-icon"><i class="fas fa-atom"></i></div>
+                                <div>
+                                    <strong>Natural Science & Technology</strong><br>
+                                    <small>Hands-on science through tactile experiments</small>
+                                </div>
+                            </div>
+                            <div class="curriculum-item">
+                                <div class="curriculum-icon"><i class="fas fa-heart"></i></div>
+                                <div>
+                                    <strong>Life Skills & SASL</strong><br>
+                                    <small>Daily living skills and communication</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="phase-card">
+                            <div class="phase-header">
+                                <div class="phase-title">Senior Phase</div>
+                                <div class="phase-age">Grade 7-8</div>
+                                <div class="phase-grade">Pre-Secondary Preparation</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--blind-theme);">Comprehensive Subject Range</h5>
+                            <p class="mb-3">Full subject range including specialized subjects, preparing students for FET phase and developing independence skills.</p>
+                            
+                            <h6 class="mb-2">CAPS Subjects:</h6>
+                            <div class="curriculum-item">
+                                <div class="curriculum-icon"><i class="fas fa-globe"></i></div>
+                                <div>
+                                    <strong>Languages & Life Orientation</strong><br>
+                                    <small>Advanced Braille literacy and life skills</small>
+                                </div>
+                            </div>
+                            <div class="curriculum-item">
+                                <div class="curriculum-icon"><i class="fas fa-flask"></i></div>
+                                <div>
+                                    <strong>Sciences & Mathematics</strong><br>
+                                    <small>Advanced mathematical and scientific concepts</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-12 mb-4">
+                        <div class="phase-card">
+                            <div class="phase-header">
+                                <div class="phase-title">FET Phase</div>
+                                <div class="phase-age">Grade 10-12</div>
+                                <div class="phase-grade">National Senior Certificate</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h5 class="mb-3" style="color: var(--blind-theme);">NSC Preparation</h5>
+                                    <p class="mb-3">Comprehensive preparation for National Senior Certificate examinations with specialized accommodations and adaptive technology support.</p>
+                                    
+                                    <h6 class="mb-2">Core Subjects:</h6>
+                                    <div class="curriculum-item">
+                                        <div class="curriculum-icon"><i class="fas fa-language"></i></div>
+                                        <div>
+                                            <strong>Languages</strong><br>
+                                            <small>Sesotho, English, SASL</small>
+                                        </div>
+                                    </div>
+                                    <div class="curriculum-item">
+                                        <div class="curriculum-icon"><i class="fas fa-calculator"></i></div>
+                                        <div>
+                                            <strong>Mathematics & Sciences</strong><br>
+                                            <small>Physical Science, Life Science</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h6 class="mb-2">Elective Subjects:</h6>
+                                    <div class="curriculum-item">
+                                        <div class="curriculum-icon"><i class="fas fa-utensils"></i></div>
+                                        <div>
+                                            <strong>Hospitality Studies</strong><br>
+                                            <small>Adapted hospitality and catering skills</small>
+                                        </div>
+                                    </div>
+                                    <div class="curriculum-item">
+                                        <div class="curriculum-icon"><i class="fas fa-briefcase"></i></div>
+                                        <div>
+                                            <strong>Business Studies</strong><br>
+                                            <small>Entrepreneurship and business principles</small>
+                                        </div>
+                                    </div>
+                                    <div class="curriculum-item">
+                                        <div class="curriculum-icon"><i class="fas fa-clock"></i></div>
+                                        <div>
+                                            <strong>History & Visual Arts</strong><br>
+                                            <small>Adapted creative arts and historical studies</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Technical Skills Development -->
+        <section class="content-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Technical Skills Development</h2>
+                        <p class="section-subtitle">Practical training adapted for blind learners, focusing on independence and employability</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="skills-card">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <h5>Adaptive Technology</h5>
+                            </div>
+                            <div class="skills-body">
+                                <p class="mb-3">Comprehensive training in assistive technology including screen readers, Braille displays, and computer skills for modern workplace integration.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>JAWS screen reader proficiency</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Braille display operation</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Computer navigation skills</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Internet and email usage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="skills-card">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <h5>Hospitality & Food Service</h5>
+                            </div>
+                            <div class="skills-body">
+                                <p class="mb-3">Adapted culinary arts and hospitality training emphasizing safety, organization, and professional food service skills.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Safe cooking techniques</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Kitchen organization systems</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Food safety standards</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Customer service skills</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="skills-card">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="fas fa-hands"></i>
+                                </div>
+                                <h5>Traditional Crafts</h5>
+                            </div>
+                            <div class="skills-body">
+                                <p class="mb-3">Traditional craft skills including cane work, needlework, and pottery, developing fine motor skills and entrepreneurship opportunities.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Cane work and basketry</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Advanced needlework</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Pottery and ceramics</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Product marketing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="skills-card">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                                <h5>Music & Audio Arts</h5>
+                            </div>
+                            <div class="skills-body">
+                                <p class="mb-3">Leveraging natural audio strengths through music education, audio production, and performance skills.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Musical instrument training</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Audio recording basics</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Performance skills</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="skills-card">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <h5>Agriculture & Horticulture</h5>
+                            </div>
+                            <div class="skills-body">
+                                <p class="mb-3">Adapted agricultural training focusing on tactile identification, sustainable farming, and garden management.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Plant identification by touch</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Soil preparation techniques</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Organic farming methods</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Success Stories -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Alumni Success Stories</h2>
+                        <p class="section-subtitle">Inspiring achievements of our blind graduates</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="success-card">
+                            <div class="success-quote">
+                                The Braille education and adaptive technology training I received at Thiboloha gave me the confidence to pursue higher education and compete on equal terms.
+                            </div>
+                            <div class="success-author">Ramaisa Thandiwe</div>
+                            <div class="success-achievement">Graduated 2013 • Studied at NID • Independent Living</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="success-card">
+                            <div class="success-quote">
+                                Learning computer skills at Thiboloha opened up a world of possibilities. I can now access information and communicate independently.
+                            </div>
+                            <div class="success-author">Sonopo Makgotso</div>
+                            <div class="success-achievement">Graduated 2013 • Computer Skills with SANCB</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="success-card">
+                            <div class="success-quote">
+                                The practical skills training gave me economic independence. I can support myself through the crafts I learned at school.
+                            </div>
+                            <div class="success-author">Kele Mpho</div>
+                            <div class="success-achievement">Graduated 2019 • Computer Skills with SANCB</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="success-card">
+                            <div class="success-quote">
+                                Thiboloha taught me that blindness is not a barrier to learning. The foundation I received there prepared me for lifelong success.
+                            </div>
+                            <div class="success-author">Letsheleha Modiehi</div>
+                            <div class="success-achievement">Graduated 2020 • Computer Skills with SANCB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Support Services -->
+        <section class="content-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Specialized Support Services</h2>
+                        <p class="section-subtitle">Comprehensive support ensuring success for every blind learner</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="text-center">
+                            <div class="skills-icon mb-3" style="background: var(--blind-theme); margin: 0 auto;">
+                                <i class="fas fa-braille"></i>
+                            </div>
+                            <h5>Braille & Print Services</h5>
+                            <p>Dedicated Braille committee ensuring quality Braille production, tactile graphics, and specialized learning materials.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="text-center">
+                            <div class="skills-icon mb-3" style="background: var(--secondary-green); margin: 0 auto;">
+                                <i class="fas fa-walking"></i>
+                            </div>
+                            <h5>Orientation & Mobility</h5>
+                            <p>Professional mobility training including white cane techniques, route planning, and safe independent travel skills.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="text-center">
+                            <div class="skills-icon mb-3" style="background: var(--accent-gold); margin: 0 auto;">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <h5>Assistive Technology</h5>
+                            <p>State-of-the-art adaptive technology including screen readers, Braille displays, and specialized software training.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="text-center">
+                            <div class="skills-icon mb-3" style="background: var(--primary-blue); margin: 0 auto;">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h5>Daily Living Skills</h5>
+                            <p>Comprehensive training in personal care, household management, and independent living skills for full autonomy.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="text-center">
+                            <div class="skills-icon mb-3" style="background: var(--blind-theme); margin: 0 auto;">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h5>Low Vision Support</h5>
+                            <p>Specialized services for learners with partial sight, including magnification tools and visual enhancement techniques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Other Programs Navigation -->
+        <section class="program-nav">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h3 style="color: var(--primary-blue);">Explore Our Other Programs</h3>
+                        <p class="text-muted">Discover comprehensive special needs education across all disability areas</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                        <a href="deaf-program.html" class="program-nav-item">
+                            <div class="program-nav-icon nav-deaf">
+                                <i class="fas fa-hands"></i>
+                            </div>
+                            <h6>Deaf Learners Program</h6>
+                            <p class="small mb-0">SASL education and deaf culture integration</p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-3">
+                        <a href="autistic-program.html" class="program-nav-item">
+                            <div class="program-nav-icon nav-autism">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <h6>Autistic Learners Program</h6>
+                            <p class="small mb-0">Structured learning for autism spectrum learners</p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-3">
+                        <a href="intellectual-program.html" class="program-nav-item">
+                            <div class="program-nav-icon nav-intellectual">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h6>Intellectual Barriers Program</h6>
+                            <p class="small mb-0">Life skills and practical education approach</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="display-4 fw-bold mb-4">Ready to Join Our Blind Program?</h2>
+                        <p class="lead mb-5">
+                            Give your child the specialized education and support needed to thrive independently. Our proven methods and experienced staff are here to guide every step of the journey.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="admissions.html" class="btn-cta">Start Application Process</a>
+                            <a href="contact.html" class="btn-cta">Schedule a Visit</a>
+                            <a href="gallery.html" class="btn-outline-cta">View Our Facilities</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--dark-gray); color: white; padding: 60px 0 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Contact Information</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>
+                        P.O. Box 829<br>
+                        Witsieshoek, 9870<br>
+                        Free State, South Africa</p>
+                        
+                        <p><i class="fas fa-phone me-2"></i>
+                        (058) 713 0048 / 713 2821</p>
+                        
+                        <p><i class="fas fa-envelope me-2"></i>
+                        thiboloha@lantic.net</p>
+                    </address>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/" style="color: rgba(255,255,255,0.8); text-decoration: none;">Home</a></li>
+                        <li class="mb-2"><a href="/about" style="color: rgba(255,255,255,0.8); text-decoration: none;">About Us</a></li>
+                        <li class="mb-2"><a href="/programs" style="color: rgba(255,255,255,0.8); text-decoration: none;">Programs</a></li>
+                        <li class="mb-2"><a href="/admissions" style="color: rgba(255,255,255,0.8); text-decoration: none;">Admissions</a></li>
+                        <li class="mb-2"><a href="/gallery" style="color: rgba(255,255,255,0.8); text-decoration: none;">Gallery</a></li>
+                        <li class="mb-2"><a href="/news" style="color: rgba(255,255,255,0.8); text-decoration: none;">News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Our Programs</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/programs/deaf-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Deaf Learners</a></li>
+                        <li class="mb-2"><a href="/programs/blind-learners" style="color: var(--blind-theme); text-decoration: none; font-weight: 600;">Blind Learners</a></li>
+                        <li class="mb-2"><a href="/programs/autistic-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Autistic Learners</a></li>
+                        <li class="mb-2"><a href="/programs/intellectual-barriers" style="color: rgba(255,255,255,0.8); text-decoration: none;">Intellectual Barriers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Follow Us</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" aria-label="Facebook" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="small">Stay connected for updates and success stories from our amazing learners.</p>
+                </div>
+            </div>
+            
+            <hr style="margin: 2rem 0; border-color: rgba(255,255,255,0.2);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Thiboloha Special School. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <a href="/privacy" style="color: rgba(255,255,255,0.8); margin-right: 2rem;">Privacy Policy</a>
+                        <a href="/accessibility" style="color: rgba(255,255,255,0.8);">Accessibility Statement</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Same JavaScript functionality as deaf program page
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            const targets = [100, 9, 15, 50];
+            
+            statNumbers.forEach((stat, index) => {
+                const target = targets[index];
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    
+                    if (index === 0) {
+                        stat.textContent = Math.floor(current) + '%';
+                    } else if (index === 2) {
+                        stat.textContent = Math.floor(current) + '+';
+                    } else {
+                        stat.textContent = Math.floor(current);
+                    }
+                }, 50);
+            });
+        }
+        
+        const statsSection = document.querySelector('.stat-highlight');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+        
+        const contentSections = document.querySelectorAll('.phase-card, .skills-card, .success-card');
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        contentSections.forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            sectionObserver.observe(section);
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.btn-cta, .btn-outline-cta');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('/')) {
+                        this.style.opacity = '0.7';
+                        setTimeout(() => {
+                            this.style.opacity = '1';
+                        }, 200);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

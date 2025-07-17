@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Thiboloha Special School | Get in Touch</title>
+    <meta name="description" content="Contact Thiboloha Special School for admissions, program information, or support. Multiple ways to reach our team including phone, email, and in-person visits.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/assets/css/contact.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content link -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <!-- Header Top Bar -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <span>Tel: (058) 713 0048 / 713 2821</span>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <i class="fas fa-envelope me-2"></i>
+                    <span>thiboloha@lantic.net</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Thiboloha Special School Homepage">
+                <img src="/assets/images/logo.png" alt="Thiboloha Special School Logo" class="img-fluid">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="programs.html" id="programsDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+                            <li><a class="dropdown-item" href="deaf-program.html">Deaf Learners</a></li>
+                            <li><a class="dropdown-item" href="blind-program.html">Blind Learners</a></li>
+                            <li><a class="dropdown-item" href="autistic-program.html">Autistic Learners</a></li>
+                            <li><a class="dropdown-item" href="intellectual-program.html">Intellectual Barriers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-3 fw-bold mb-4">Get in Touch</h1>
+                        <p class="lead fs-4 mb-4">We're here to answer your questions, provide guidance, and support your family's journey. Multiple ways to connect with our caring team.</p>
+                        <div class="hero-buttons">
+                            <a href="#contact-form" class="btn-cta">Send Message</a>
+                            <a href="tel:+27587130048" class="btn-outline-cta">Call Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Quick Contact Options -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">How Can We Help You?</h2>
+                        <p class="section-subtitle">Choose the best way to reach us based on your needs</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="contact-method-card" data-category="admissions">
+                            <div class="method-icon admissions-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h4>Admissions Inquiry</h4>
+                            <p>Questions about enrollment, programs, or application process</p>
+                            <div class="method-actions">
+                                <a href="tel:+27587130048" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-phone me-2"></i>Call Admissions
+                                </a>
+                                <button class="btn btn-outline-primary btn-sm" onclick="showContactForm('admissions')">
+                                    <i class="fas fa-envelope me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="contact-method-card" data-category="support">
+                            <div class="method-icon support-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h4>Student Support</h4>
+                            <p>Academic support, counseling, or existing student concerns</p>
+                            <div class="method-actions">
+                                <a href="tel:+27587132821" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-phone me-2"></i>Call Support
+                                </a>
+                                <button class="btn btn-outline-primary btn-sm" onclick="showContactForm('support')">
+                                    <i class="fas fa-envelope me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="contact-method-card" data-category="general">
+                            <div class="method-icon general-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <h4>General Information</h4>
+                            <p>School events, volunteer opportunities, or general questions</p>
+                            <div class="method-actions">
+                                <a href="mailto:thiboloha@lantic.net" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-envelope me-2"></i>Email Us
+                                </a>
+                                <button class="btn btn-outline-primary btn-sm" onclick="showContactForm('general')">
+                                    <i class="fas fa-comment me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Staff Directory -->
+        <section class="content-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Meet Our Team</h2>
+                        <p class="section-subtitle">Connect directly with the right department</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="staff-card">
+                            <div class="staff-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="staff-info">
+                                <h5>Principal's Office</h5>
+                                <p class="staff-role">Leadership & Strategic Direction</p>
+                                <p class="staff-description">School policies, strategic initiatives, community partnerships</p>
+                                <div class="staff-contact">
+                                    <a href="tel:+27587130048" class="contact-link">
+                                        <i class="fas fa-phone"></i> (058) 713 0048
+                                    </a>
+                                    <a href="mailto:principal@thiboloha.edu" class="contact-link">
+                                        <i class="fas fa-envelope"></i> Email Principal
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="staff-card">
+                            <div class="staff-avatar">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <div class="staff-info">
+                                <h5>Admissions Office</h5>
+                                <p class="staff-role">Enrollment & Assessment</p>
+                                <p class="staff-description">Application process, program placement, school tours</p>
+                                <div class="staff-contact">
+                                    <a href="tel:+27587130048" class="contact-link">
+                                        <i class="fas fa-phone"></i> (058) 713 0048
+                                    </a>
+                                    <a href="mailto:admissions@thiboloha.edu" class="contact-link">
+                                        <i class="fas fa-envelope"></i> Email Admissions
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="staff-card">
+                            <div class="staff-avatar">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="staff-info">
+                                <h5>Student Support Services</h5>
+                                <p class="staff-role">Counseling & Wellness</p>
+                                <p class="staff-description">Psychological support, social work, family liaison</p>
+                                <div class="staff-contact">
+                                    <a href="tel:+27587132821" class="contact-link">
+                                        <i class="fas fa-phone"></i> (058) 713 2821
+                                    </a>
+                                    <a href="mailto:support@thiboloha.edu" class="contact-link">
+                                        <i class="fas fa-envelope"></i> Email Support
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="staff-card">
+                            <div class="staff-avatar">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="staff-info">
+                                <h5>Academic Department</h5>
+                                <p class="staff-role">Curriculum & Instruction</p>
+                                <p class="staff-description">Teaching methods, assessment, academic progress</p>
+                                <div class="staff-contact">
+                                    <a href="tel:+27587132821" class="contact-link">
+                                        <i class="fas fa-phone"></i> (058) 713 2821
+                                    </a>
+                                    <a href="mailto:academics@thiboloha.edu" class="contact-link">
+                                        <i class="fas fa-envelope"></i> Email Academics
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="staff-card">
+                            <div class="staff-avatar">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="staff-info">
+                                <h5>Hostel Administration</h5>
+                                <p class="staff-role">Residential Services</p>
+                                <p class="staff-description">Boarding facilities, residential care, accommodation</p>
+                                <div class="staff-contact">
+                                    <a href="tel:+27587132821" class="contact-link">
+                                        <i class="fas fa-phone"></i> (058) 713 2821
+                                    </a>
+                                    <a href="mailto:hostel@thiboloha.edu" class="contact-link">
+                                        <i class="fas fa-envelope"></i> Email Hostel
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="staff-card">
+                            <div class="staff-avatar">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="staff-info">
+                                <h5>Finance Office</h5>
+                                <p class="staff-role">Financial Services</p>
+                                <p class="staff-description">School fees, financial assistance, billing inquiries</p>
+                                <div class="staff-contact">
+                                    <a href="tel:+27587130048" class="contact-link">
+                                        <i class="fas fa-phone"></i> (058) 713 0048
+                                    </a>
+                                    <a href="mailto:finance@thiboloha.edu" class="contact-link">
+                                        <i class="fas fa-envelope"></i> Email Finance
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Form Section -->
+        <section class="content-section" id="contact-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="contact-form-container">
+                            <div class="text-center mb-5">
+                                <h2 class="section-title">Send Us a Message</h2>
+                                <p class="section-subtitle">We'll respond within 24 hours during business days</p>
+                            </div>
+                            
+                            <form id="contactForm" class="contact-form" novalidate>
+                                <!-- Contact Category Selection -->
+                                <div class="form-step active" id="step-category">
+                                    <h4 class="form-step-title">What can we help you with?</h4>
+                                    <div class="category-selection">
+                                        <div class="category-option" data-category="admissions">
+                                            <i class="fas fa-user-graduate"></i>
+                                            <span>Admissions & Enrollment</span>
+                                        </div>
+                                        <div class="category-option" data-category="support">
+                                            <i class="fas fa-hands-helping"></i>
+                                            <span>Student Support</span>
+                                        </div>
+                                        <div class="category-option" data-category="general">
+                                            <i class="fas fa-info-circle"></i>
+                                            <span>General Information</span>
+                                        </div>
+                                        <div class="category-option" data-category="other">
+                                            <i class="fas fa-question-circle"></i>
+                                            <span>Other</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Contact Information -->
+                                <div class="form-step" id="step-contact">
+                                    <h4 class="form-step-title">Your Contact Information</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="firstName" class="form-label">First Name *</label>
+                                                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                                <div class="invalid-feedback">Please enter your first name.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="lastName" class="form-label">Last Name *</label>
+                                                <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                                <div class="invalid-feedback">Please enter your last name.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="email" class="form-label">Email Address *</label>
+                                                <input type="email" class="form-control" id="email" name="email" required>
+                                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="phone" class="form-label">Phone Number *</label>
+                                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                                                <div class="invalid-feedback">Please enter your phone number.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="relationship" class="form-label">Your Relationship to Student</label>
+                                        <select class="form-select" id="relationship" name="relationship">
+                                            <option value="">Select relationship</option>
+                                            <option value="parent">Parent</option>
+                                            <option value="guardian">Guardian</option>
+                                            <option value="caregiver">Caregiver</option>
+                                            <option value="family">Family Member</option>
+                                            <option value="professional">Professional</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <!-- Message Details -->
+                                <div class="form-step" id="step-message">
+                                    <h4 class="form-step-title">Tell Us More</h4>
+                                    
+                                    <div class="form-group">
+                                        <label for="subject" class="form-label">Subject *</label>
+                                        <input type="text" class="form-control" id="subject" name="subject" required>
+                                        <div class="invalid-feedback">Please enter a subject for your message.</div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="message" class="form-label">Message *</label>
+                                        <textarea class="form-control" id="message" name="message" rows="6" required 
+                                                  placeholder="Please provide as much detail as possible so we can best assist you..."></textarea>
+                                        <div class="invalid-feedback">Please enter your message.</div>
+                                        <div class="form-text">Minimum 10 characters required</div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="priority" class="form-label">Priority Level</label>
+                                        <select class="form-select" id="priority" name="priority">
+                                            <option value="normal">Normal</option>
+                                            <option value="urgent">Urgent</option>
+                                            <option value="low">Low Priority</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="preferredContact" class="form-label">Preferred Response Method</label>
+                                        <select class="form-select" id="preferredContact" name="preferredContact">
+                                            <option value="email">Email</option>
+                                            <option value="phone">Phone Call</option>
+                                            <option value="either">Either Email or Phone</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="callbackRequested" name="callbackRequested">
+                                            <label class="form-check-label" for="callbackRequested">
+                                                Request a callback within 24 hours
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Form Navigation -->
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-outline-secondary" id="prevBtn" onclick="changeStep(-1)" style="display: none;">
+                                        <i class="fas fa-chevron-left me-2"></i>Previous
+                                    </button>
+                                    <button type="button" class="btn btn-primary" id="nextBtn" onclick="changeStep(1)">
+                                        Next <i class="fas fa-chevron-right ms-2"></i>
+                                    </button>
+                                    <button type="submit" class="btn btn-success" id="submitBtn" style="display: none;">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                                
+                                <!-- Progress Indicator -->
+                                <div class="form-progress">
+                                    <div class="progress-step active" data-step="1">1</div>
+                                    <div class="progress-step" data-step="2">2</div>
+                                    <div class="progress-step" data-step="3">3</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Location & Visit Information -->
+        <section class="content-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Visit Our Campus</h2>
+                        <p class="section-subtitle">See our facilities and meet our team in person</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="location-card">
+                            <h4><i class="fas fa-map-marker-alt me-2"></i>Our Location</h4>
+                            <div class="location-details">
+                                <p><strong>Postal Address:</strong><br>
+                                P.O. Box 829<br>
+                                Witsieshoek, 9870<br>
+                                Free State, South Africa</p>
+                                
+                                <p><strong>Physical Address:</strong><br>
+                                Thiboloha Special School<br>
+                                Witsieshoek Area<br>
+                                Free State Province</p>
+                                
+                                <div class="location-actions">
+                                    <a href="#" class="btn btn-primary" onclick="getDirections()">
+                                        <i class="fas fa-directions me-2"></i>Get Directions
+                                    </a>
+                                    <button class="btn btn-outline-primary" onclick="showLocationDetails()">
+                                        <i class="fas fa-info-circle me-2"></i>More Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="visit-card">
+                            <h4><i class="fas fa-calendar-alt me-2"></i>Schedule a Visit</h4>
+                            <p>Experience our school firsthand with a personalized tour</p>
+                            
+                            <div class="visit-options">
+                                <div class="visit-option">
+                                    <h6><i class="fas fa-eye me-2"></i>Campus Tour</h6>
+                                    <p>45-minute guided tour of our facilities and classrooms</p>
+                                </div>
+                                <div class="visit-option">
+                                    <h6><i class="fas fa-comments me-2"></i>Information Session</h6>
+                                    <p>1-hour presentation about our programs and admission process</p>
+                                </div>
+                                <div class="visit-option">
+                                    <h6><i class="fas fa-user-friends me-2"></i>Meet & Greet</h6>
+                                    <p>Personal meeting with our admissions team and relevant program coordinators</p>
+                                </div>
+                            </div>
+                            
+                            <div class="visit-actions">
+                                <button class="btn btn-success" onclick="scheduleVisit()">
+                                    <i class="fas fa-calendar-plus me-2"></i>Schedule Visit
+                                </button>
+                                <a href="tel:+27587130048" class="btn btn-outline-success">
+                                    <i class="fas fa-phone me-2"></i>Call to Arrange
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Operating Hours -->
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                        <div class="hours-card">
+                            <h4 class="text-center mb-4"><i class="fas fa-clock me-2"></i>Operating Hours</h4>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="hours-section">
+                                        <h6>Office Hours</h6>
+                                        <p><strong>Monday - Friday:</strong> 8:00 AM - 4:00 PM<br>
+                                        <strong>Saturday:</strong> By appointment only<br>
+                                        <strong>Sunday:</strong> Closed</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="hours-section">
+                                        <h6>Admissions Office</h6>
+                                        <p><strong>Monday - Friday:</strong> 8:30 AM - 3:30 PM<br>
+                                        <strong>Lunch:</strong> 12:00 PM - 1:00 PM<br>
+                                        <strong>Appointments:</strong> Recommended</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="hours-section">
+                                        <h6>Emergency Contact</h6>
+                                        <p><strong>After Hours:</strong> (058) 713 0048<br>
+                                        <strong>Urgent Matters:</strong> Leave voicemail<br>
+                                        <strong>Response:</strong> Next business day</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Emergency & After Hours -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="emergency-section text-center">
+                            <h3 class="mb-4"><i class="fas fa-exclamation-triangle me-2"></i>Emergency & After Hours</h3>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="emergency-card">
+                                        <h5><i class="fas fa-phone-alt me-2"></i>School Emergencies</h5>
+                                        <p>For urgent school-related matters affecting student safety or wellbeing</p>
+                                        <a href="tel:+27587130048" class="btn btn-danger">
+                                            <i class="fas fa-phone me-2"></i>(058) 713 0048
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="emergency-card">
+                                        <h5><i class="fas fa-ambulance me-2"></i>Medical Emergencies</h5>
+                                        <p>For life-threatening emergencies, contact emergency services immediately</p>
+                                        <a href="tel:10177" class="btn btn-danger">
+                                            <i class="fas fa-phone me-2"></i>10177 (Emergency)
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-4">For non-urgent matters, please use our contact form or email us, and we will respond during regular business hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+    <footer class="footer" style="background: var(--dark-gray); color: white; padding: 60px 0 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Contact Information</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>
+                        P.O. Box 829<br>
+                        Witsieshoek, 9870<br>
+                        Free State, South Africa</p>
+                        
+                        <p><i class="fas fa-phone me-2"></i>
+                        (058) 713 0048 / 713 2821</p>
+                        
+                        <p><i class="fas fa-envelope me-2"></i>
+                        thiboloha@lantic.net</p>
+                    </address>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/" style="color: rgba(255,255,255,0.8); text-decoration: none;">Home</a></li>
+                        <li class="mb-2"><a href="/about" style="color: rgba(255,255,255,0.8); text-decoration: none;">About Us</a></li>
+                        <li class="mb-2"><a href="/programs" style="color: rgba(255,255,255,0.8); text-decoration: none;">Programs</a></li>
+                        <li class="mb-2"><a href="/admissions" style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">Admissions</a></li>
+                        <li class="mb-2"><a href="/gallery" style="color: rgba(255,255,255,0.8); text-decoration: none;">Gallery</a></li>
+                        <li class="mb-2"><a href="/news" style="color: rgba(255,255,255,0.8); text-decoration: none;">News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Our Programs</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/programs/deaf-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Deaf Learners</a></li>
+                        <li class="mb-2"><a href="/programs/blind-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Blind Learners</a></li>
+                        <li class="mb-2"><a href="/programs/autistic-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Autistic Learners</a></li>
+                        <li class="mb-2"><a href="/programs/intellectual-barriers" style="color: rgba(255,255,255,0.8); text-decoration: none;">Intellectual Barriers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Follow Us</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" aria-label="Facebook" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="small">Stay connected for updates and success stories from our amazing learners.</p>
+                </div>
+            </div>
+            
+            <hr style="margin: 2rem 0; border-color: rgba(255,255,255,0.2);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Thiboloha Special School. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <a href="/privacy" style="color: rgba(255,255,255,0.8); margin-right: 2rem;">Privacy Policy</a>
+                        <a href="/accessibility" style="color: rgba(255,255,255,0.8);">Accessibility Statement</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+      <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script type="text/javascript" src="assets/js/contact.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // FAQ Toggle Functionality
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('.faq-icon');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(faq => {
+                if (faq !== answer) {
+                    faq.classList.remove('active');
+                    faq.previousElementSibling.querySelector('.faq-icon').classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            answer.classList.toggle('active');
+            icon.classList.toggle('active');
+        }
+        
+        // Form Validation and Submission
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form elements
+            const submitBtn = this.querySelector('.btn-submit');
+            const originalText = submitBtn.innerHTML;
+            
+            // Validate required fields
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('is-invalid');
+                    isValid = false;
+                } else {
+                    field.classList.remove('is-invalid');
+                }
+            });
+            
+            if (!isValid) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Submitting...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission (replace with actual form handling)
+            setTimeout(() => {
+                alert('Thank you for your inquiry! We will contact you within 24 hours.');
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.process-step, .requirement-card, .contact-card, .timeline-content');
+            
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+        
+        // Form field enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Phone number formatting
+            const phoneField = document.getElementById('phone');
+            phoneField.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length >= 10) {
+                    value = value.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+                }
+                e.target.value = value;
+            });
+            
+            // Email validation
+            const emailField = document.getElementById('email');
+            emailField.addEventListener('blur', function(e) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (e.target.value && !emailRegex.test(e.target.value)) {
+                    e.target.classList.add('is-invalid');
+                } else {
+                    e.target.classList.remove('is-invalid');
+                }
+            });
+            
+            // Auto-expand textarea
+            const textarea = document.getElementById('message');
+            textarea.addEventListener('input', function() {
+                this.style.height = 'auto';
+                this.style.height = this.scrollHeight + 'px';
+            });
+            
+            // Form analytics (if needed)
+            const formFields = document.querySelectorAll('#inquiryForm input, #inquiryForm select, #inquiryForm textarea');
+            formFields.forEach(field => {
+                field.addEventListener('focus', function() {
+                    // Track field interactions for analytics
+                    console.log('Field focused:', this.name);
+                });
+            });
+        });
+        
+        // Enhanced button interactions
+        document.querySelectorAll('.btn-cta, .btn-outline-cta, .btn-submit').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                // Create ripple effect
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                this.style.position = 'relative';
+                this.style.overflow = 'hidden';
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+        
+        // Accessibility enhancements
+        document.addEventListener('keydown', function(e) {
+            // Enhanced keyboard navigation for FAQ
+            if (e.target.classList.contains('faq-question')) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleFAQ(e.target);
+                }
+            }
+            
+            // Escape key to close all FAQs
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.faq-answer.active').forEach(faq => {
+                    faq.classList.remove('active');
+                    faq.previousElementSibling.querySelector('.faq-icon').classList.remove('active');
+                });
+            }
+        });
+        
+        // Progress indicator for form completion
+        function updateFormProgress() {
+            const requiredFields = document.querySelectorAll('#inquiryForm [required]');
+            const filledFields = Array.from(requiredFields).filter(field => field.value.trim() !== '');
+            const progress = (filledFields.length / requiredFields.length) * 100;
+            
+            // Update progress indicator if you add one
+            console.log('Form completion:', Math.round(progress) + '%');
+        }
+        
+        // Add progress tracking to form fields
+        document.addEventListener('DOMContentLoaded', function() {
+            const formFields = document.querySelectorAll('#inquiryForm input, #inquiryForm select, #inquiryForm textarea');
+            formFields.forEach(field => {
+                field.addEventListener('input', updateFormProgress);
+                field.addEventListener('change', updateFormProgress);
+            });
+        });
+    </script>
+    
+    <!-- Add ripple effect CSS -->
+    <style>
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            transform: scale(0);
+            animation: ripple-animation 0.6s linear;
+            pointer-events: none;
+        }
+        
+        @keyframes ripple-animation {
+            to {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+        
+        .form-control.is-invalid,
+        .form-select.is-invalid {
+            border-color: #dc3545;
+            box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+        }
+        
+        .form-control.is-invalid:focus,
+        .form-select.is-invalid:focus {
+            border-color: #dc3545;
+            box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+        }
+    </style>
+</body>
+</html>  

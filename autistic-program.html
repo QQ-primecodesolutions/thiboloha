@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autistic Learners Program - Thiboloha Special School | Structured Autism Education</title>
+    <meta name="description" content="Specialized autism education with structured learning environments, sensory support, and individualized programs. Supporting learners on the autism spectrum to reach their full potential.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #1e3a8a;
+            --secondary-green: #16a085;
+            --accent-gold: #f39c12;
+            --light-gray: #f8f9fa;
+            --dark-gray: #2c3e50;
+            --text-muted: #6c757d;
+            --autism-theme: #e74c3c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+        }
+        
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-blue);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        /* Header Styles */
+        .header-top {
+            background: var(--primary-blue);
+            color: white;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+        
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: var(--dark-gray) !important;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--primary-blue) !important;
+        }
+        
+        /* Program Hero Section */
+        .program-hero {
+            background: linear-gradient(135deg, var(--autism-theme) 0%, var(--primary-blue) 100%);
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .program-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path d="M100,200 L200,200 L200,300 L300,300 L300,400 L400,400" stroke="rgba(255,255,255,0.1)" stroke-width="3" fill="none"/><rect x="150" y="150" width="50" height="50" fill="rgba(255,255,255,0.05)"/><rect x="750" y="350" width="80" height="80" fill="rgba(255,255,255,0.08)"/></svg>');
+            animation: float 30s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+        }
+        
+        .program-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .breadcrumb {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 15px;
+            border-radius: 25px;
+            margin-bottom: 2rem;
+        }
+        
+        .breadcrumb-item a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+        }
+        
+        .breadcrumb-item.active {
+            color: white;
+        }
+        
+        .program-icon-large {
+            width: 120px;
+            height: 120px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--accent-gold);
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .text-center .section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+        }
+        
+        /* Level Cards */
+        .level-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+            height: 100%;
+            border-left: 4px solid var(--autism-theme);
+        }
+        
+        .level-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .level-header {
+            background: linear-gradient(45deg, var(--autism-theme), var(--primary-blue));
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .level-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .level-focus {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .level-badge {
+            background: var(--accent-gold);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+        
+        /* Skills Grid */
+        .skill-item {
+            background: var(--light-gray);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .skill-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--autism-theme);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-size: 1rem;
+        }
+        
+        /* Approach Cards */
+        .approach-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .approach-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .approach-header {
+            background: var(--secondary-green);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .approach-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+        
+        .approach-body {
+            padding: 2rem;
+        }
+        
+        /* Success Stories */
+        .success-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            border-top: 4px solid var(--accent-gold);
+        }
+        
+        .success-quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .success-quote::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--accent-gold);
+            position: absolute;
+            left: -20px;
+            top: -10px;
+        }
+        
+        .success-author {
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+        
+        .success-achievement {
+            color: var(--secondary-green);
+            font-size: 0.9rem;
+        }
+        
+        /* Statistics */
+        .stat-highlight {
+            background: var(--autism-theme);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Call to Action */
+        .cta-section {
+            background: var(--primary-blue);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .btn-cta {
+            background: var(--accent-gold);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px 10px;
+        }
+        
+        .btn-cta:hover {
+            background: #e67e22;
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .btn-outline-cta {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 13px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px 10px;
+        }
+        
+        .btn-outline-cta:hover {
+            background: white;
+            color: var(--primary-blue);
+        }
+        
+        /* Program Navigation */
+        .program-nav {
+            background: var(--light-gray);
+            padding: 40px 0;
+        }
+        
+        .program-nav-item {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            color: var(--dark-gray);
+            display: block;
+        }
+        
+        .program-nav-item:hover {
+            transform: translateY(-3px);
+            color: var(--dark-gray);
+            text-decoration: none;
+        }
+        
+        .program-nav-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin: 0 auto 1rem;
+            color: white;
+        }
+        
+        .nav-deaf { background: #4a90e2; }
+        .nav-blind { background: #9b59b6; }
+        .nav-autism { background: var(--autism-theme); }
+        .nav-intellectual { background: var(--secondary-green); }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .program-icon-large {
+                width: 80px;
+                height: 80px;
+                font-size: 2rem;
+            }
+            
+            .level-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+        
+        /* Accessibility improvements */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-blue: #000080;
+                --autism-theme: #8B0000;
+                --secondary-green: #006400;
+                --dark-gray: #000000;
+            }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content link -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <!-- Header Top Bar -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <span>Tel: (058) 713 0048 / 713 2821</span>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <i class="fas fa-envelope me-2"></i>
+                    <span>thiboloha@lantic.net</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Thiboloha Special School Homepage">
+                <img src="/assets/images/logo.png" alt="Thiboloha Special School Logo" class="img-fluid">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="programs.html" id="programsDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+                            <li><a class="dropdown-item" href="deaf-program.html">Deaf Learners</a></li>
+                            <li><a class="dropdown-item" href="blind-program.html">Blind Learners</a></li>
+                            <li><a class="dropdown-item" href="autistic-program.html">Autistic Learners</a></li>
+                            <li><a class="dropdown-item" href="intellectual-program.html">Intellectual Barriers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Program Hero Section -->
+    <section class="program-hero">
+        <div class="container">
+            <div class="program-hero-content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/programs">Programs</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Autistic Learners</li>
+                    </ol>
+                </nav>
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="program-icon-large">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h1 class="display-3 fw-bold mb-4">Autistic Learners Program</h1>
+                        <p class="lead fs-4 mb-4">Structured, sensory-friendly education supporting learners on the autism spectrum through individualized approaches, predictable routines, and comprehensive developmental support.</p>
+                        <div class="hero-buttons">
+                            <a href="#curriculum" class="btn-cta">View Program Structure</a>
+                            <a href="admissions.html" class="btn-outline-cta">Apply Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="/assets/images/autism-program-hero.jpg" alt="Autistic students in structured learning environment" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Program Overview -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <h2 class="section-title">Program Overview</h2>
+                        <p class="section-subtitle">Celebrating neurodiversity through structured, individualized autism education</p>
+                    </div>
+                </div>
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="mb-4" style="color: var(--autism-theme);">Why Choose Our Autism Program?</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Individualized Education Plans:</strong> Tailored programs meeting each learner's unique needs
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Structured Environment:</strong> Predictable routines and clear visual schedules
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Sensory Support:</strong> Sensory-friendly spaces and integration therapy
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Communication Focus:</strong> AAC and social communication development
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Behavioral Support:</strong> Positive behavior intervention strategies
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Family Partnership:</strong> Comprehensive family training and support
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="/assets/images/autism-structured-learning.jpg" alt="Structured autism classroom with visual schedules" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Statistics Section -->
+        <section class="stat-highlight">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Individualized Programs</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">1:6</div>
+                            <div class="stat-label">Teacher-Student Ratio</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">Structured Levels</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">50</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Program Levels -->
+        <section class="content-section" id="curriculum">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Program Structure</h2>
+                        <p class="section-subtitle">Level-based progression supporting individual development and growth</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="level-card">
+                            <div class="level-header">
+                                <div class="level-title">Level 1</div>
+                                <div class="level-focus">Foundation & Assessment</div>
+                                <div class="level-badge">Early Intervention</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--autism-theme);">Initial Assessment & Adaptation</h5>
+                            <p class="mb-3">Comprehensive assessment and gradual introduction to structured learning environment with focus on routine establishment and basic communication.</p>
+                            
+                            <h6 class="mb-2">Key Focus Areas:</h6>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-calendar-alt"></i></div>
+                                <div>
+                                    <strong>Routine Establishment</strong><br>
+                                    <small>Creating predictable daily schedules and transitions</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                                <div>
+                                    <strong>Basic Communication</strong><br>
+                                    <small>Functional communication and request systems</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-handshake"></i></div>
+                                <div>
+                                    <strong>Social Awareness</strong><br>
+                                    <small>Basic social interaction and group participation</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="level-card">
+                            <div class="level-header">
+                                <div class="level-title">Skills Level 1</div>
+                                <div class="level-focus">Basic Life Skills</div>
+                                <div class="level-badge">Functional Skills</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--autism-theme);">Fundamental Life Skills</h5>
+                            <p class="mb-3">Development of essential daily living skills, personal care routines, and basic academic concepts through structured, visual learning approaches.</p>
+                            
+                            <h6 class="mb-2">Skill Development:</h6>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-utensils"></i></div>
+                                <div>
+                                    <strong>Self-Care Skills</strong><br>
+                                    <small>Personal hygiene, dressing, and feeding independence</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-book-open"></i></div>
+                                <div>
+                                    <strong>Pre-Academic Skills</strong><br>
+                                    <small>Basic literacy and numeracy concepts</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-eye"></i></div>
+                                <div>
+                                    <strong>Visual Learning</strong><br>
+                                    <small>Picture schedules and visual communication systems</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="level-card">
+                            <div class="level-header">
+                                <div class="level-title">Skills Level 2</div>
+                                <div class="level-focus">Advanced Skills</div>
+                                <div class="level-badge">Academic Integration</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--autism-theme);">Enhanced Learning & Social Skills</h5>
+                            <p class="mb-3">Building on foundational skills with increased academic content, enhanced communication abilities, and expanded social interaction opportunities.</p>
+                            
+                            <h6 class="mb-2">Learning Areas:</h6>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-graduation-cap"></i></div>
+                                <div>
+                                    <strong>Academic Subjects</strong><br>
+                                    <small>Adapted Mathematics, English, and Life Skills</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-users"></i></div>
+                                <div>
+                                    <strong>Social Skills Development</strong><br>
+                                    <small>Peer interaction and group work participation</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-tablet-alt"></i></div>
+                                <div>
+                                    <strong>Technology Integration</strong><br>
+                                    <small>AAC devices and educational technology</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="level-card">
+                            <div class="level-header">
+                                <div class="level-title">Skills Level 3</div>
+                                <div class="level-focus">Independence & Transition</div>
+                                <div class="level-badge">Life Preparation</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--autism-theme);">Independence & Community Skills</h5>
+                            <p class="mb-3">Advanced skill development focusing on independence, community integration, and preparation for post-school life with vocational skill introduction.</p>
+                            
+                            <h6 class="mb-2">Advanced Skills:</h6>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-briefcase"></i></div>
+                                <div>
+                                    <strong>Vocational Skills</strong><br>
+                                    <small>Basic work skills and job preparation activities</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-map-marked-alt"></i></div>
+                                <div>
+                                    <strong>Community Integration</strong><br>
+                                    <small>Shopping, banking, and community navigation</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-home"></i></div>
+                                <div>
+                                    <strong>Independent Living</strong><br>
+                                    <small>Advanced self-care and household management</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Teaching Approaches -->
+        <section class="content-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Specialized Teaching Approaches</h2>
+                        <p class="section-subtitle">Evidence-based strategies tailored for learners on the autism spectrum</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="approach-card">
+                            <div class="approach-header">
+                                <div class="approach-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h5>Visual Learning Supports</h5>
+                            </div>
+                            <div class="approach-body">
+                                <p class="mb-3">Comprehensive visual support systems including picture schedules, social stories, and visual cues to enhance understanding and communication.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Picture Exchange Communication</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Visual schedules and timers</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Social stories and scripts</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Environmental visual cues</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="approach-card">
+                            <div class="approach-header">
+                                <div class="approach-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h5>Sensory Integration Therapy</h5>
+                            </div>
+                            <div class="approach-body">
+                                <p class="mb-3">Specialized sensory programs addressing sensory processing challenges and creating optimal learning environments for each individual.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Sensory assessment and profiling</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Sensory diet implementation</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Calm-down spaces and tools</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Movement and proprioceptive activities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="approach-card">
+                            <div class="approach-header">
+                                <div class="approach-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h5>Positive Behavior Support</h5>
+                            </div>
+                            <div class="approach-body">
+                                <p class="mb-3">Proactive behavior intervention strategies focusing on understanding and meeting the underlying needs behind challenging behaviors.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Functional behavior assessment</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Replacement behavior teaching</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Environmental modifications</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Positive reinforcement systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="approach-card">
+                            <div class="approach-header">
+                                <div class="approach-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h5>Communication Development</h5>
+                            </div>
+                            <div class="approach-body">
+                                <p class="mb-3">Comprehensive communication support including speech therapy, AAC systems, and social communication skill development.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Augmentative communication devices</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Speech and language therapy</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Social communication groups</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="approach-card">
+                            <div class="approach-header">
+                                <div class="approach-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h5>Social Skills Training</h5>
+                            </div>
+                            <div class="approach-body">
+                                <p class="mb-3">Structured social skills instruction through role-playing, peer interaction opportunities, and real-world practice sessions.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Peer interaction activities</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Social skills groups</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Community-based learning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Success Stories -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Success Stories</h2>
+                        <p class="section-subtitle">Celebrating progress and achievements of our autistic learners</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="success-card">
+                            <div class="success-quote">
+                                The structured environment at Thiboloha helped my son develop communication skills we never thought possible. He now expresses his needs clearly and participates in family conversations.
+                            </div>
+                            <div class="success-author">Parent of Learner</div>
+                            <div class="success-achievement">Skills Level 2 Graduate • Improved Communication & Social Skills</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="success-card">
+                            <div class="success-quote">
+                                Through the sensory support program, my daughter learned to manage her sensitivities and now participates confidently in group activities.
+                            </div>
+                            <div class="success-author">Parent of Learner</div>
+                            <div class="success-achievement">Skills Level 3 Graduate • Sensory Integration Success</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="success-card">
+                            <div class="success-quote">
+                                The visual schedules and structured routines gave my child the predictability he needed to thrive. His anxiety decreased significantly and learning increased.
+                            </div>
+                            <div class="success-author">Parent of Learner</div>
+                            <div class="success-achievement">Level 1 Graduate • Routine Mastery & Reduced Anxiety</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="success-card">
+                            <div class="success-quote">
+                                The positive behavior support approach helped us understand our son's needs better. Now he uses appropriate ways to communicate his frustrations.
+                            </div>
+                            <div class="success-author">Parent of Learner</div>
+                            <div class="success-achievement">Skills Level 1 Graduate • Behavioral Improvement</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Support Services -->
+        <section class="content-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Comprehensive Support Services</h2>
+                        <p class="section-subtitle">Holistic support ensuring success for autistic learners and their families</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="text-center">
+                            <div class="approach-icon mb-3" style="background: var(--autism-theme); margin: 0 auto;">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <h5>Individual Education Plans</h5>
+                            <p>Comprehensive IEPs developed collaboratively with families, outlining specific goals, strategies, and progress monitoring for each learner.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="text-center">
+                            <div class="approach-icon mb-3" style="background: var(--secondary-green); margin: 0 auto;">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h5>Family Training & Support</h5>
+                            <p>Regular training sessions for families on autism strategies, behavior management, and home-school collaboration techniques.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="text-center">
+                            <div class="approach-icon mb-3" style="background: var(--accent-gold); margin: 0 auto;">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <h5>Multidisciplinary Team</h5>
+                            <p>Collaborative team including special education teachers, speech therapists, occupational therapists, and behavioral specialists.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="text-center">
+                            <div class="approach-icon mb-3" style="background: var(--primary-blue); margin: 0 auto;">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h5>Progress Monitoring</h5>
+                            <p>Regular assessment and data collection to track progress, adjust interventions, and celebrate achievements in all developmental areas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="text-center">
+                            <div class="approach-icon mb-3" style="background: var(--autism-theme); margin: 0 auto;">
+                                <i class="fas fa-route"></i>
+                            </div>
+                            <h5>Transition Planning</h5>
+                            <p>Comprehensive planning for transitions between levels and preparation for post-school life, including vocational and independent living skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Other Programs Navigation -->
+        <section class="program-nav">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h3 style="color: var(--primary-blue);">Explore Our Other Programs</h3>
+                        <p class="text-muted">Discover comprehensive special needs education across all disability areas</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                        <a href="deaf-program.html" class="program-nav-item">
+                            <div class="program-nav-icon nav-deaf">
+                                <i class="fas fa-hands"></i>
+                            </div>
+                            <h6>Deaf Learners Program</h6>
+                            <p class="small mb-0">SASL education and deaf culture integration</p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-3">
+                        <a href="blind-program.html" class="program-nav-item">
+                            <div class="program-nav-icon nav-blind">
+                                <i class="fas fa-braille"></i>
+                            </div>
+                            <h6>Blind Learners Program</h6>
+                            <p class="small mb-0">Braille literacy and adaptive technology education</p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-3">
+                        <a href="intellectual-program.html" class="program-nav-item">
+                            <div class="program-nav-icon nav-intellectual">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h6>Intellectual Barriers Program</h6>
+                            <p class="small mb-0">Life skills and practical education approach</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="display-4 fw-bold mb-4">Ready to Support Your Autistic Learner?</h2>
+                        <p class="lead mb-5">
+                            Give your child the structured, supportive environment they need to develop communication skills, build confidence, and reach their unique potential. Our experienced team is here to support every step of the journey.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="admissions.html" class="btn-cta">Start Application Process</a>
+                            <a href="contact.html" class="btn-cta">Schedule a Visit</a>
+                            <a href="gallery.html" class="btn-outline-cta">View Our Facilities</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--dark-gray); color: white; padding: 60px 0 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Contact Information</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>
+                        P.O. Box 829<br>
+                        Witsieshoek, 9870<br>
+                        Free State, South Africa</p>
+                        
+                        <p><i class="fas fa-phone me-2"></i>
+                        (058) 713 0048 / 713 2821</p>
+                        
+                        <p><i class="fas fa-envelope me-2"></i>
+                        thiboloha@lantic.net</p>
+                    </address>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/" style="color: rgba(255,255,255,0.8); text-decoration: none;">Home</a></li>
+                        <li class="mb-2"><a href="/about" style="color: rgba(255,255,255,0.8); text-decoration: none;">About Us</a></li>
+                        <li class="mb-2"><a href="/programs" style="color: rgba(255,255,255,0.8); text-decoration: none;">Programs</a></li>
+                        <li class="mb-2"><a href="/admissions" style="color: rgba(255,255,255,0.8); text-decoration: none;">Admissions</a></li>
+                        <li class="mb-2"><a href="/gallery" style="color: rgba(255,255,255,0.8); text-decoration: none;">Gallery</a></li>
+                        <li class="mb-2"><a href="/news" style="color: rgba(255,255,255,0.8); text-decoration: none;">News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Our Programs</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/programs/deaf-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Deaf Learners</a></li>
+                        <li class="mb-2"><a href="/programs/blind-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Blind Learners</a></li>
+                        <li class="mb-2"><a href="/programs/autistic-learners" style="color: var(--autism-theme); text-decoration: none; font-weight: 600;">Autistic Learners</a></li>
+                        <li class="mb-2"><a href="/programs/intellectual-barriers" style="color: rgba(255,255,255,0.8); text-decoration: none;">Intellectual Barriers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Follow Us</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" aria-label="Facebook" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="small">Stay connected for updates and success stories from our amazing learners.</p>
+                </div>
+            </div>
+            
+            <hr style="margin: 2rem 0; border-color: rgba(255,255,255,0.2);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Thiboloha Special School. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <a href="/privacy" style="color: rgba(255,255,255,0.8); margin-right: 2rem;">Privacy Policy</a>
+                        <a href="/accessibility" style="color: rgba(255,255,255,0.8);">Accessibility Statement</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Same JavaScript functionality as other program pages
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            const targets = [100, 1, 4, 50];
+            
+            statNumbers.forEach((stat, index) => {
+                const target = targets[index];
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    
+                    if (index === 0) {
+                        stat.textContent = Math.floor(current) + '%';
+                    } else if (index === 1) {
+                        stat.textContent = '1:' + Math.floor(current + 5); // 1:6 ratio
+                    } else {
+                        stat.textContent = Math.floor(current);
+                    }
+                }, 50);
+            });
+        }
+        
+        const statsSection = document.querySelector('.stat-highlight');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+        
+        const contentSections = document.querySelectorAll('.level-card, .approach-card, .success-card');
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        contentSections.forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            sectionObserver.observe(section);
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.btn-cta, .btn-outline-cta');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('/')) {
+                        this.style.opacity = '0.7';
+                        setTimeout(() => {
+                            this.style.opacity = '1';
+                        }, 200);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

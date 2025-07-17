@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Thiboloha Special School | Apply for Special Needs Education</title>
+    <meta name="description" content="Apply to Thiboloha Special School for comprehensive special needs education. Simple application process, expert assessment, and personalized program placement for your child.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #1e3a8a;
+            --secondary-green: #16a085;
+            --accent-gold: #f39c12;
+            --light-gray: #f8f9fa;
+            --dark-gray: #2c3e50;
+            --text-muted: #6c757d;
+            --success-green: #27ae60;
+            --warning-orange: #e67e22;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+        }
+        
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-blue);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        /* Header Styles */
+        .header-top {
+            background: var(--primary-blue);
+            color: white;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+        
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: var(--dark-gray) !important;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--primary-blue) !important;
+        }
+        
+        /* Page Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-green) 100%);
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path d="M200,300 Q500,100 800,300" stroke="rgba(255,255,255,0.1)" stroke-width="3" fill="none"/><circle cx="150" cy="200" r="40" fill="rgba(255,255,255,0.05)"/><circle cx="850" cy="400" r="60" fill="rgba(255,255,255,0.08)"/><rect x="600" y="150" width="80" height="80" rx="10" fill="rgba(255,255,255,0.06)"/></svg>');
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .page-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .breadcrumb {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 15px;
+            border-radius: 25px;
+            margin-bottom: 2rem;
+        }
+        
+        .breadcrumb-item a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+        }
+        
+        .breadcrumb-item.active {
+            color: white;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--accent-gold);
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .text-center .section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+        }
+        
+        /* Process Steps */
+        .process-step {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+            position: relative;
+            border-left: 4px solid var(--secondary-green);
+        }
+        
+        .process-step:hover {
+            transform: translateY(-5px);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--accent-gold);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            border: 4px solid white;
+        }
+        
+        .step-title {
+            color: var(--primary-blue);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            margin-left: 2rem;
+        }
+        
+        .step-content {
+            margin-left: 2rem;
+        }
+        
+        /* Requirements Cards */
+        .requirement-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+            height: 100%;
+        }
+        
+        .requirement-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .requirement-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1.5rem;
+            color: white;
+        }
+        
+        .document-icon {
+            background: var(--primary-blue);
+        }
+        
+        .medical-icon {
+            background: var(--success-green);
+        }
+        
+        .assessment-icon {
+            background: var(--accent-gold);
+        }
+        
+        .support-icon {
+            background: var(--secondary-green);
+        }
+        
+        .requirement-title {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .requirement-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .requirement-list li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .requirement-list i {
+            color: var(--success-green);
+            margin-right: 0.5rem;
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: var(--secondary-green);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: var(--accent-gold);
+            border: 4px solid var(--secondary-green);
+            top: 30px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-item:nth-child(even)::after {
+            left: -10px;
+        }
+        
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-phase {
+            color: var(--primary-blue);
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-duration {
+            color: var(--accent-gold);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        /* FAQ Section */
+        .faq-item {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-weight: 600;
+            color: var(--primary-blue);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question:hover {
+            background: #e9ecef;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-answer.active {
+            padding: 1.5rem;
+            max-height: 500px;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-icon.active {
+            transform: rotate(180deg);
+        }
+        
+        /* Quick Application Form */
+        .quick-form {
+            background: var(--light-gray);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-control {
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: var(--secondary-green);
+            box-shadow: 0 0 0 0.2rem rgba(22, 160, 133, 0.25);
+        }
+        
+        .form-select {
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+        }
+        
+        .btn-submit {
+            background: var(--secondary-green);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .btn-submit:hover {
+            background: #138d75;
+            transform: translateY(-2px);
+        }
+        
+        /* Contact Cards */
+        .contact-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+            color: white;
+        }
+        
+        .phone-icon {
+            background: var(--primary-blue);
+        }
+        
+        .email-icon {
+            background: var(--secondary-green);
+        }
+        
+        .visit-icon {
+            background: var(--accent-gold);
+        }
+        
+        /* Call to Action */
+        .cta-section {
+            background: var(--primary-blue);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .btn-cta {
+            background: var(--accent-gold);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px 10px;
+        }
+        
+        .btn-cta:hover {
+            background: #e67e22;
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .btn-outline-cta {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 13px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px 10px;
+        }
+        
+        .btn-outline-cta:hover {
+            background: white;
+            color: var(--primary-blue);
+        }
+        
+        /* Alert Boxes */
+        .alert-info {
+            background: rgba(22, 160, 133, 0.1);
+            border: 1px solid var(--secondary-green);
+            color: var(--primary-blue);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .alert-warning {
+            background: rgba(243, 156, 18, 0.1);
+            border: 1px solid var(--accent-gold);
+            color: var(--dark-gray);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 21px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0%;
+            }
+            
+            .step-number {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 1rem;
+            }
+            
+            .step-title,
+            .step-content {
+                margin-left: 0;
+            }
+        }
+        
+        /* Accessibility improvements */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-blue: #000080;
+                --secondary-green: #006400;
+                --dark-gray: #000000;
+            }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content link -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <!-- Header Top Bar -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <span>Tel: (058) 713 0048 / 713 2821</span>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <i class="fas fa-envelope me-2"></i>
+                    <span>thiboloha@lantic.net</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Thiboloha Special School Homepage">
+                <img src="/assets/images/logo.png" alt="Thiboloha Special School Logo" class="img-fluid">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="programs.html" id="programsDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+                            <li><a class="dropdown-item" href="deaf-program.html">Deaf Learners</a></li>
+                            <li><a class="dropdown-item" href="blind-program.html">Blind Learners</a></li>
+                            <li><a class="dropdown-item" href="autistic-program.html">Autistic Learners</a></li>
+                            <li><a class="dropdown-item" href="intellectual-program.html">Intellectual Barriers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Admissions</li>
+                    </ol>
+                </nav>
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-3 fw-bold mb-4">Join Our School Family</h1>
+                        <p class="lead fs-4 mb-4">Begin your child's journey toward excellence in special needs education. Our simple application process ensures every learner finds their perfect program match.</p>
+                        <div class="hero-buttons">
+                            <a href="#application-process" class="btn-cta">Start Application</a>
+                            <a href="#quick-inquiry" class="btn-outline-cta">Quick Inquiry</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Application Process -->
+        <section class="content-section" id="application-process">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Application Process</h2>
+                        <p class="section-subtitle">Four simple steps to begin your child's educational journey with us</p>
+                    </div>
+                </div>
+                
+                <div class="alert-info">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-info-circle me-3 fs-4"></i>
+                        <div>
+                            <strong>Application Deadline:</strong> We accept applications year-round, with rolling admissions for available spaces. Early application is recommended for the best program placement.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <h4 class="step-title">Initial Contact & Consultation</h4>
+                            <div class="step-content">
+                                <p class="mb-3">Contact our admissions office to schedule an initial consultation. We'll discuss your child's needs, our programs, and answer any questions you may have.</p>
+                                <ul class="requirement-list">
+                                    <li><i class="fas fa-check"></i>Phone consultation with admissions counselor</li>
+                                    <li><i class="fas fa-check"></i>Program overview and school tour (optional)</li>
+                                    <li><i class="fas fa-check"></i>Initial needs assessment discussion</li>
+                                    <li><i class="fas fa-check"></i>Information packet provided</li>
+                                </ul>
+                                <p class="text-muted small mt-2"><strong>Duration:</strong> 1-2 weeks</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <h4 class="step-title">Document Submission</h4>
+                            <div class="step-content">
+                                <p class="mb-3">Submit required documentation including medical records, previous school reports, and completed application forms.</p>
+                                <ul class="requirement-list">
+                                    <li><i class="fas fa-check"></i>Completed application form</li>
+                                    <li><i class="fas fa-check"></i>Birth certificate and ID documents</li>
+                                    <li><i class="fas fa-check"></i>Medical and psychological reports</li>
+                                    <li><i class="fas fa-check"></i>Previous school records (if applicable)</li>
+                                </ul>
+                                <p class="text-muted small mt-2"><strong>Duration:</strong> 1 week for document review</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <h4 class="step-title">Professional Assessment</h4>
+                            <div class="step-content">
+                                <p class="mb-3">Our multidisciplinary team conducts a comprehensive assessment to determine the most appropriate program and support needs.</p>
+                                <ul class="requirement-list">
+                                    <li><i class="fas fa-check"></i>Educational assessment</li>
+                                    <li><i class="fas fa-check"></i>Psychological evaluation (if needed)</li>
+                                    <li><i class="fas fa-check"></i>Speech and language assessment</li>
+                                    <li><i class="fas fa-check"></i>Multidisciplinary team review</li>
+                                </ul>
+                                <p class="text-muted small mt-2"><strong>Duration:</strong> 2-3 weeks</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <h4 class="step-title">Enrollment & Orientation</h4>
+                            <div class="step-content">
+                                <p class="mb-3">Upon acceptance, complete enrollment procedures and participate in our comprehensive orientation program for learners and families.</p>
+                                <ul class="requirement-list">
+                                    <li><i class="fas fa-check"></i>Program placement notification</li>
+                                    <li><i class="fas fa-check"></i>Enrollment documentation completion</li>
+                                    <li><i class="fas fa-check"></i>Individual Education Plan (IEP) development</li>
+                                    <li><i class="fas fa-check"></i>Family orientation and school tour</li>
+                                </ul>
+                                <p class="text-muted small mt-2"><strong>Duration:</strong> 1-2 weeks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Requirements -->
+        <section class="content-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Admission Requirements</h2>
+                        <p class="section-subtitle">What you need to prepare for a successful application</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="requirement-card">
+                            <div class="requirement-icon document-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h5 class="requirement-title">Required Documents</h5>
+                            <ul class="requirement-list">
+                                <li><i class="fas fa-check"></i>Completed application form</li>
+                                <li><i class="fas fa-check"></i>Certified copy of birth certificate</li>
+                                <li><i class="fas fa-check"></i>Parent/guardian identification</li>
+                                <li><i class="fas fa-check"></i>Proof of residence</li>
+                                <li><i class="fas fa-check"></i>Recent passport-size photographs</li>
+                                <li><i class="fas fa-check"></i>Previous school reports (if applicable)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="requirement-card">
+                            <div class="requirement-icon medical-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <h5 class="requirement-title">Medical Documentation</h5>
+                            
+                            <ul class="requirement-list">
+                                <li><i class="fas fa-check"></i>Comprehensive medical report</li>
+                                <li><i class="fas fa-check"></i>Specialist reports (audiologist, ophthalmologist, etc.)</li>
+                                <li><i class="fas fa-check"></i>Psychological or psychiatric assessment</li>
+                                <li><i class="fas fa-check"></i>Immunization records</li>
+                                <li><i class="fas fa-check"></i>Current medication list (if applicable)</li>
+                                <li><i class="fas fa-check"></i>Emergency medical information</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="requirement-card">
+                            <div class="requirement-icon assessment-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <h5 class="requirement-title">Assessment Criteria</h5>
+                            <ul class="requirement-list">
+                                <li><i class="fas fa-check"></i>Age-appropriate for program level</li>
+                                <li><i class="fas fa-check"></i>Documented learning needs matching our programs</li>
+                                <li><i class="fas fa-check"></i>Ability to benefit from our educational approach</li>
+                                <li><i class="fas fa-check"></i>Family commitment to collaborative partnership</li>
+                                <li><i class="fas fa-check"></i>No significant behavioral concerns requiring specialized intervention</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="requirement-card">
+                            <div class="requirement-icon support-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h5 class="requirement-title">Family Commitment</h5>
+                            <ul class="requirement-list">
+                                <li><i class="fas fa-check"></i>Attendance at orientation program</li>
+                                <li><i class="fas fa-check"></i>Participation in IEP meetings</li>
+                                <li><i class="fas fa-check"></i>Support of home-school collaboration</li>
+                                <li><i class="fas fa-check"></i>Regular communication with teachers</li>
+                                <li><i class="fas fa-check"></i>Commitment to long-term educational plan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert-warning">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-exclamation-triangle me-3 fs-4"></i>
+                        <div>
+                            <strong>Important Note:</strong> All documents must be original or certified copies. Documents in languages other than English or Sesotho must be accompanied by certified translations.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Age Guidelines & Program Placement -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Age Guidelines & Program Placement</h2>
+                        <p class="section-subtitle">Understanding which program best suits your child's age and needs</p>
+                    </div>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-phase">Preprimary Phase</div>
+                            <div class="timeline-duration">Ages 3-7 years</div>
+                            <p>Early intervention and foundation skills development. Available for Deaf (ages 3-7) and Blind (ages 4-7) learners. Focus on basic communication, social skills, and school readiness.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-phase">Foundation Phase</div>
+                            <div class="timeline-duration">Grade R-3 (Ages 6-9)</div>
+                            <p>Academic foundation building with specialized instruction methods. Literacy, numeracy, and life skills development adapted for each program's unique approaches.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-phase">Intermediate Phase</div>
+                            <div class="timeline-duration">Grade 4-6 (Ages 10-12)</div>
+                            <p>Expanded curriculum including Natural Science and Technology. Continued development of specialized skills and increasing independence.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-phase">Senior Phase</div>
+                            <div class="timeline-duration">Grade 7-9 (Ages 13-15)</div>
+                            <p>Comprehensive subject range and preparation for FET phase. Vocational exploration and career guidance begin during this phase.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-phase">FET Phase</div>
+                            <div class="timeline-duration">Grade 10-12 (Ages 16-18)</div>
+                            <p>National Senior Certificate preparation with specialized accommodations. Technical skills training and post-school transition planning.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-phase">Specialized Programs</div>
+                            <div class="timeline-duration">Age-flexible</div>
+                            <p>Autistic Learners (Level-based) and Intellectual Barriers (Ability-based levels 1-6) programs with individualized pacing and age-appropriate adaptations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Financial Information -->
+        <section class="content-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Financial Information</h2>
+                        <p class="section-subtitle">Understanding costs and available financial support</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="requirement-card text-center">
+                            <div class="requirement-icon" style="background: var(--success-green);">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h5 class="requirement-title">Government Subsidized</h5>
+                            <p>As a registered special needs school, Thiboloha receives government funding that significantly reduces educational costs for families.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="requirement-card text-center">
+                            <div class="requirement-icon" style="background: var(--primary-blue);">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h5 class="requirement-title">Hostel Accommodation</h5>
+                            <p>Affordable residential facilities available for learners from distant areas, with additional support for families facing financial hardship.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="requirement-card text-center">
+                            <div class="requirement-icon" style="background: var(--accent-gold);">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h5 class="requirement-title">Financial Assistance</h5>
+                            <p>Additional support available for disadvantaged families through school bursary fund and community partnerships.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert-info">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-info-circle me-3 fs-4"></i>
+                        <div>
+                            <strong>Financial Consultation:</strong> Contact our admissions office for detailed information about costs and available financial assistance options. We're committed to ensuring financial barriers don't prevent access to quality education.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Frequently Asked Questions</h2>
+                        <p class="section-subtitle">Common questions from prospective families</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                How do I know which program is right for my child?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our experienced assessment team will conduct a comprehensive evaluation to determine the most appropriate program. During your initial consultation, we'll discuss your child's specific needs, strengths, and learning style to guide program placement. Our multidisciplinary approach ensures accurate assessment and optimal program matching.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                What is the typical class size for each program?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Class sizes vary by program to ensure optimal learning environments. Our Autistic Learners program maintains a 1:6 teacher-to-student ratio, while other programs have small class sizes typically ranging from 8-12 students with specialized support staff as needed.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                Can my child transfer between programs if their needs change?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we regularly review each student's progress and can facilitate transfers between programs if assessment indicates this would better serve the learner's needs. Any program changes are made collaboratively with families and based on comprehensive evaluation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                What support is available for families during the transition?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We provide comprehensive orientation programs, regular family training sessions, and ongoing support throughout your child's educational journey. Our social worker and family liaison coordinator ensure smooth transitions and address any concerns promptly.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                Are there transportation services available?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>While we don't provide daily transportation, our hostel accommodation serves learners from distant areas. For local families, we can provide information about available transport options and coordinate with other families for shared arrangements.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                What happens after my child graduates from Thiboloha?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We provide comprehensive transition planning including university preparation, vocational training placement, employment support, and independent living skills. Our alumni network demonstrates successful outcomes across higher education, skilled employment, and entrepreneurship.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Quick Inquiry Form -->
+        <section class="content-section" style="background-color: var(--light-gray);" id="quick-inquiry">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="text-center mb-5">
+                            <h2 class="section-title">Quick Inquiry Form</h2>
+                            <p class="section-subtitle">Get started with a simple inquiry - we'll contact you within 24 hours</p>
+                        </div>
+                        
+                        <div class="quick-form">
+                            <form id="inquiryForm" action="#" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="parentName" class="form-label">Parent/Guardian Name *</label>
+                                            <input type="text" class="form-control" id="parentName" name="parentName" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phone" class="form-label">Phone Number *</label>
+                                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" id="email" name="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="childAge" class="form-label">Child's Age *</label>
+                                            <select class="form-select" id="childAge" name="childAge" required>
+                                                <option value="">Select age range</option>
+                                                <option value="3-5">3-5 years</option>
+                                                <option value="6-9">6-9 years</option>
+                                                <option value="10-12">10-12 years</option>
+                                                <option value="13-15">13-15 years</option>
+                                                <option value="16-18">16-18 years</option>
+                                                <option value="18+">18+ years</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="programInterest" class="form-label">Program of Interest</label>
+                                    <select class="form-select" id="programInterest" name="programInterest">
+                                        <option value="">Not sure yet - need guidance</option>
+                                        <option value="deaf">Deaf Learners Program</option>
+                                        <option value="blind">Blind Learners Program</option>
+                                        <option value="autism">Autistic Learners Program</option>
+                                        <option value="intellectual">Intellectual Barriers Program</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Tell us about your child's needs</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Please share any specific needs, questions, or concerns you'd like us to address..."></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contactPreference" class="form-label">Preferred Contact Method</label>
+                                    <select class="form-select" id="contactPreference" name="contactPreference">
+                                        <option value="phone">Phone call</option>
+                                        <option value="email">Email</option>
+                                        <option value="either">Either phone or email</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="schoolTour" name="schoolTour">
+                                        <label class="form-check-label" for="schoolTour">
+                                            I'm interested in scheduling a school tour
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="btn-submit">
+                                    <i class="fas fa-paper-plane me-2"></i>Submit Inquiry
+                                </button>
+                                
+                                <p class="small text-muted mt-3 text-center">
+                                    By submitting this form, you consent to being contacted by Thiboloha Special School regarding your inquiry. We respect your privacy and will not share your information with third parties.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Information -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Ready to Get Started?</h2>
+                        <p class="section-subtitle">Multiple ways to connect with our admissions team</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="contact-card">
+                            <div class="contact-icon phone-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h5>Call Us</h5>
+                            <p class="mb-3">Speak directly with our admissions counselor</p>
+                            <p><strong>(058) 713 0048</strong><br><strong>(058) 713 2821</strong></p>
+                            <p class="small text-muted">Monday - Friday: 8:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="contact-card">
+                            <div class="contact-icon email-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h5>Email Us</h5>
+                            <p class="mb-3">Send your questions and we'll respond within 24 hours</p>
+                            <p><strong>thiboloha@lantic.net</strong></p>
+                            <p class="small text-muted">Include "Admissions Inquiry" in the subject line</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="contact-card">
+                            <div class="contact-icon visit-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h5>Visit Us</h5>
+                            <p class="mb-3">Schedule a personal tour of our facilities</p>
+                            <p><strong>P.O. Box 829<br>Witsieshoek, 9870<br>Free State, South Africa</strong></p>
+                            <p class="small text-muted">Tours available by appointment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="display-4 fw-bold mb-4">Your Child's Future Starts Here</h2>
+                        <p class="lead mb-5">
+                            Don't wait to give your child the specialized education they deserve. Our admissions team is ready to guide you through every step of the process and answer all your questions.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="tel:+27587130048" class="btn-cta">Call Now: (058) 713 0048</a>
+                            <a href="programs.html" class="btn-outline-cta">Explore Our Programs</a>
+                        </div>
+                        <p class="mt-4 text-white opacity-75">
+                            <i class="fas fa-clock me-2"></i>
+                            Applications processed within 5-7 business days
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--dark-gray); color: white; padding: 60px 0 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Contact Information</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>
+                        P.O. Box 829<br>
+                        Witsieshoek, 9870<br>
+                        Free State, South Africa</p>
+                        
+                        <p><i class="fas fa-phone me-2"></i>
+                        (058) 713 0048 / 713 2821</p>
+                        
+                        <p><i class="fas fa-envelope me-2"></i>
+                        thiboloha@lantic.net</p>
+                    </address>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/" style="color: rgba(255,255,255,0.8); text-decoration: none;">Home</a></li>
+                        <li class="mb-2"><a href="/about" style="color: rgba(255,255,255,0.8); text-decoration: none;">About Us</a></li>
+                        <li class="mb-2"><a href="/programs" style="color: rgba(255,255,255,0.8); text-decoration: none;">Programs</a></li>
+                        <li class="mb-2"><a href="/admissions" style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">Admissions</a></li>
+                        <li class="mb-2"><a href="/gallery" style="color: rgba(255,255,255,0.8); text-decoration: none;">Gallery</a></li>
+                        <li class="mb-2"><a href="/news" style="color: rgba(255,255,255,0.8); text-decoration: none;">News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Our Programs</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/programs/deaf-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Deaf Learners</a></li>
+                        <li class="mb-2"><a href="/programs/blind-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Blind Learners</a></li>
+                        <li class="mb-2"><a href="/programs/autistic-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Autistic Learners</a></li>
+                        <li class="mb-2"><a href="/programs/intellectual-barriers" style="color: rgba(255,255,255,0.8); text-decoration: none;">Intellectual Barriers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Follow Us</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" aria-label="Facebook" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="small">Stay connected for updates and success stories from our amazing learners.</p>
+                </div>
+            </div>
+            
+            <hr style="margin: 2rem 0; border-color: rgba(255,255,255,0.2);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Thiboloha Special School. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <a href="/privacy" style="color: rgba(255,255,255,0.8); margin-right: 2rem;">Privacy Policy</a>
+                        <a href="/accessibility" style="color: rgba(255,255,255,0.8);">Accessibility Statement</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // FAQ Toggle Functionality
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('.faq-icon');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(faq => {
+                if (faq !== answer) {
+                    faq.classList.remove('active');
+                    faq.previousElementSibling.querySelector('.faq-icon').classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            answer.classList.toggle('active');
+            icon.classList.toggle('active');
+        }
+        
+        // Form Validation and Submission
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form elements
+            const submitBtn = this.querySelector('.btn-submit');
+            const originalText = submitBtn.innerHTML;
+            
+            // Validate required fields
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('is-invalid');
+                    isValid = false;
+                } else {
+                    field.classList.remove('is-invalid');
+                }
+            });
+            
+            if (!isValid) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Submitting...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission (replace with actual form handling)
+            setTimeout(() => {
+                alert('Thank you for your inquiry! We will contact you within 24 hours.');
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.process-step, .requirement-card, .contact-card, .timeline-content');
+            
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+        
+        // Form field enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Phone number formatting
+            const phoneField = document.getElementById('phone');
+            phoneField.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length >= 10) {
+                    value = value.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+                }
+                e.target.value = value;
+            });
+            
+            // Email validation
+            const emailField = document.getElementById('email');
+            emailField.addEventListener('blur', function(e) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (e.target.value && !emailRegex.test(e.target.value)) {
+                    e.target.classList.add('is-invalid');
+                } else {
+                    e.target.classList.remove('is-invalid');
+                }
+            });
+            
+            // Auto-expand textarea
+            const textarea = document.getElementById('message');
+            textarea.addEventListener('input', function() {
+                this.style.height = 'auto';
+                this.style.height = this.scrollHeight + 'px';
+            });
+            
+            // Form analytics (if needed)
+            const formFields = document.querySelectorAll('#inquiryForm input, #inquiryForm select, #inquiryForm textarea');
+            formFields.forEach(field => {
+                field.addEventListener('focus', function() {
+                    // Track field interactions for analytics
+                    console.log('Field focused:', this.name);
+                });
+            });
+        });
+        
+        // Enhanced button interactions
+        document.querySelectorAll('.btn-cta, .btn-outline-cta, .btn-submit').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                // Create ripple effect
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                this.style.position = 'relative';
+                this.style.overflow = 'hidden';
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+        
+        // Accessibility enhancements
+        document.addEventListener('keydown', function(e) {
+            // Enhanced keyboard navigation for FAQ
+            if (e.target.classList.contains('faq-question')) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleFAQ(e.target);
+                }
+            }
+            
+            // Escape key to close all FAQs
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.faq-answer.active').forEach(faq => {
+                    faq.classList.remove('active');
+                    faq.previousElementSibling.querySelector('.faq-icon').classList.remove('active');
+                });
+            }
+        });
+        
+        // Progress indicator for form completion
+        function updateFormProgress() {
+            const requiredFields = document.querySelectorAll('#inquiryForm [required]');
+            const filledFields = Array.from(requiredFields).filter(field => field.value.trim() !== '');
+            const progress = (filledFields.length / requiredFields.length) * 100;
+            
+            // Update progress indicator if you add one
+            console.log('Form completion:', Math.round(progress) + '%');
+        }
+        
+        // Add progress tracking to form fields
+        document.addEventListener('DOMContentLoaded', function() {
+            const formFields = document.querySelectorAll('#inquiryForm input, #inquiryForm select, #inquiryForm textarea');
+            formFields.forEach(field => {
+                field.addEventListener('input', updateFormProgress);
+                field.addEventListener('change', updateFormProgress);
+            });
+        });
+    </script>
+    
+    <!-- Add ripple effect CSS -->
+    <style>
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            transform: scale(0);
+            animation: ripple-animation 0.6s linear;
+            pointer-events: none;
+        }
+        
+        @keyframes ripple-animation {
+            to {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+        
+        .form-control.is-invalid,
+        .form-select.is-invalid {
+            border-color: #dc3545;
+            box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+        }
+        
+        .form-control.is-invalid:focus,
+        .form-select.is-invalid:focus {
+            border-color: #dc3545;
+            box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+        }
+    </style>
+</body>
+</html>

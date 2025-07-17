@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intellectual Barriers Program - Thiboloha Special School | Life Skills Education</title>
+    <meta name="description" content="Comprehensive life skills education for learners with intellectual disabilities. Individualized programs focusing on independence, community integration, and practical skills development.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #1e3a8a;
+            --secondary-green: #16a085;
+            --accent-gold: #f39c12;
+            --light-gray: #f8f9fa;
+            --dark-gray: #2c3e50;
+            --text-muted: #6c757d;
+            --intellectual-theme: #16a085;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+        }
+        
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-blue);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        /* Header Styles */
+        .header-top {
+            background: var(--primary-blue);
+            color: white;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+        
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: var(--dark-gray) !important;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--primary-blue) !important;
+        }
+        
+        /* Program Hero Section */
+        .program-hero {
+            background: linear-gradient(135deg, var(--intellectual-theme) 0%, var(--primary-blue) 100%);
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .program-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path d="M200,200 Q400,100 600,200 Q800,300 1000,200" stroke="rgba(255,255,255,0.1)" stroke-width="3" fill="none"/><circle cx="150" cy="150" r="30" fill="rgba(255,255,255,0.05)"/><circle cx="850" cy="350" r="50" fill="rgba(255,255,255,0.08)"/><path d="M100,800 L200,700 L300,800 L400,700" stroke="rgba(255,255,255,0.06)" stroke-width="2" fill="none"/></svg>');
+            animation: float 35s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-8px) scale(1.02); }
+        }
+        
+        .program-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .breadcrumb {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 15px;
+            border-radius: 25px;
+            margin-bottom: 2rem;
+        }
+        
+        .breadcrumb-item a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+        }
+
+        .breadcrumb-item.active {
+            color: white;
+        }
+        
+        .program-icon-large {
+            width: 120px;
+            height: 120px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--accent-gold);
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .text-center .section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+        }
+        
+        /* Level Cards */
+        .level-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+            height: 100%;
+            border-left: 4px solid var(--intellectual-theme);
+        }
+        
+        .level-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .level-header {
+            background: linear-gradient(45deg, var(--intellectual-theme), var(--primary-blue));
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .level-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .level-focus {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .level-badge {
+            background: var(--accent-gold);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+        
+        /* Skills Grid */
+        .skill-item {
+            background: var(--light-gray);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .skill-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--intellectual-theme);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-size: 1rem;
+        }
+        
+        /* Skills Development */
+        .skills-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .skills-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .skills-header {
+            background: var(--secondary-green);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .skills-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+        
+        .skills-body {
+            padding: 2rem;
+        }
+        
+        /* Success Stories */
+        .success-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            border-top: 4px solid var(--accent-gold);
+        }
+        
+        .success-quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .success-quote::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--accent-gold);
+            position: absolute;
+            left: -20px;
+            top: -10px;
+        }
+        
+        .success-author {
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+        
+        .success-achievement {
+            color: var(--secondary-green);
+            font-size: 0.9rem;
+        }
+        
+        /* Statistics */
+        .stat-highlight {
+            background: var(--intellectual-theme);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Call to Action */
+        .cta-section {
+            background: var(--primary-blue);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .btn-cta {
+            background: var(--accent-gold);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px 10px;
+        }
+        
+        .btn-cta:hover {
+            background: #e67e22;
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .btn-outline-cta {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 13px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px 10px;
+        }
+        
+        .btn-outline-cta:hover {
+            background: white;
+            color: var(--primary-blue);
+        }
+        
+        /* Program Navigation */
+        .program-nav {
+            background: var(--light-gray);
+            padding: 40px 0;
+        }
+        
+        .program-nav-item {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            color: var(--dark-gray);
+            display: block;
+        }
+        
+        .program-nav-item:hover {
+            transform: translateY(-3px);
+            color: var(--dark-gray);
+            text-decoration: none;
+        }
+        
+        .program-nav-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin: 0 auto 1rem;
+            color: white;
+        }
+        
+        .nav-deaf { background: #4a90e2; }
+        .nav-blind { background: #9b59b6; }
+        .nav-autism { background: #e74c3c; }
+        .nav-intellectual { background: var(--intellectual-theme); }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .program-icon-large {
+                width: 80px;
+                height: 80px;
+                font-size: 2rem;
+            }
+            
+            .level-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+        
+        /* Accessibility improvements */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-blue: #000080;
+                --intellectual-theme: #006400;
+                --secondary-green: #006400;
+                --dark-gray: #000000;
+            }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content link -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <!-- Header Top Bar -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <span>Tel: (058) 713 0048 / 713 2821</span>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <i class="fas fa-envelope me-2"></i>
+                    <span>thiboloha@lantic.net</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Thiboloha Special School Homepage">
+                <img src="/assets/images/logo.png" alt="Thiboloha Special School Logo" class="img-fluid">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="programs.html" id="programsDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+                            <li><a class="dropdown-item" href="deaf-program.html">Deaf Learners</a></li>
+                            <li><a class="dropdown-item" href="blind-program.html">Blind Learners</a></li>
+                            <li><a class="dropdown-item" href="autistic-program.html">Autistic Learners</a></li>
+                            <li><a class="dropdown-item" href="intellectual-program.html">Intellectual Barriers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Program Hero Section -->
+    <section class="program-hero">
+        <div class="container">
+            <div class="program-hero-content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="programs.html">Programs</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Intellectual Barriers</li>
+                    </ol>
+                </nav>
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="program-icon-large">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h1 class="display-3 fw-bold mb-4">Intellectual Barriers Program</h1>
+                        <p class="lead fs-4 mb-4">Life skills-focused education promoting independence, community integration, and meaningful participation for learners with intellectual disabilities through individualized, practical learning approaches.</p>
+                        <div class="hero-buttons">
+                            <a href="#curriculum" class="btn-cta">View Program Levels</a>
+                            <a href="admissions.html" class="btn-outline-cta">Apply Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="/assets/images/intellectual-program-hero.jpg" alt="Students engaged in practical life skills activities" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Program Overview -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <h2 class="section-title">Program Overview</h2>
+                        <p class="section-subtitle">Empowering independence through practical, meaningful life skills education</p>
+                    </div>
+                </div>
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="mb-4" style="color: var(--intellectual-theme);">Why Choose Our Intellectual Barriers Program?</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Individualized Pacing:</strong> Learning progresses at each student's optimal pace
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Practical Life Skills:</strong> Focus on skills needed for daily independence
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Community Integration:</strong> Real-world learning and social participation
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Vocational Preparation:</strong> Work skills and entrepreneurship training
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Creative Expression:</strong> Arts, crafts, and cultural activities
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-success me-3"></i>
+                                <strong>Family Partnership:</strong> Comprehensive family support and training
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="/assets/images/life-skills-learning.jpg" alt="Students learning practical life skills" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Statistics Section -->
+        <section class="stat-highlight">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Ability-Based Levels</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Individualized Programs</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">Life Skills Areas</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <div class="stat-number">50</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Program Levels -->
+        <section class="content-section" id="curriculum">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Program Levels</h2>
+                        <p class="section-subtitle">Ability-based progression supporting individual growth and development</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="level-card">
+                            <div class="level-header">
+                                <div class="level-title">Level 1</div>
+                                <div class="level-focus">Foundation Skills</div>
+                                <div class="level-badge">Basic Independence</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--intellectual-theme);">Essential Life Skills Foundation</h5>
+                            <p class="mb-3">Introduction to basic personal care, communication, and social skills with emphasis on routine establishment and safety awareness.</p>
+                            
+                            <h6 class="mb-2">Core Learning Areas:</h6>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-hands-washing"></i></div>
+                                <div>
+                                    <strong>Personal Care</strong><br>
+                                    <small>Hygiene, dressing, and basic self-care routines</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                                <div>
+                                    <strong>Basic Communication</strong><br>
+                                    <small>Expressing needs and understanding simple instructions</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                                <div>
+                                    <strong>Safety Awareness</strong><br>
+                                    <small>Understanding safety rules and hazard recognition</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="level-card">
+                            <div class="level-header">
+                                <div class="level-title">Level 2</div>
+                                <div class="level-focus">Functional Academics</div>
+                                <div class="level-badge">Basic Literacy & Numeracy</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--intellectual-theme);">Functional Academic Skills</h5>
+                            <p class="mb-3">Development of basic literacy and numeracy skills integrated with practical applications in daily life contexts.</p>
+                            
+                            <h6 class="mb-2">Academic Areas:</h6>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-book-open"></i></div>
+                                <div>
+                                    <strong>Functional Literacy</strong><br>
+                                    <small>Reading signs, labels, and basic written instructions</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+                                <div>
+                                    <strong>Practical Mathematics</strong><br>
+                                    <small>Money concepts, time, and basic measurement</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-language"></i></div>
+                                <div>
+                                    <strong>Languages</strong><br>
+                                    <small>Sesotho and English for everyday communication</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="level-card">
+                            <div class="level-header">
+                                <div class="level-title">Level 3</div>
+                                <div class="level-focus">Domestic Skills</div>
+                                <div class="level-badge">Household Management</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--intellectual-theme);">Household & Domestic Skills</h5>
+                            <p class="mb-3">Comprehensive training in household management, cooking, cleaning, and basic home maintenance skills.</p>
+                            
+                            <h6 class="mb-2">Domestic Skills:</h6>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-utensils"></i></div>
+                                <div>
+                                    <strong>Cooking & Food Preparation</strong><br>
+                                    <small>Basic cooking skills and food safety</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-broom"></i></div>
+                                <div>
+                                    <strong>Cleaning & Maintenance</strong><br>
+                                    <small>Household cleaning and basic maintenance tasks</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-tshirt"></i></div>
+                                <div>
+                                    <strong>Laundry & Clothing Care</strong><br>
+                                    <small>Washing, drying, and clothing maintenance</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="level-card">
+                            <div class="level-header">
+                                <div class="level-title">Level 4</div>
+                                <div class="level-focus">Community Skills</div>
+                                <div class="level-badge">Social Integration</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--intellectual-theme);">Community Integration Skills</h5>
+                            <p class="mb-3">Development of skills needed for successful participation in community activities and social interactions.</p>
+                            
+                            <h6 class="mb-2">Community Skills:</h6>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-shopping-cart"></i></div>
+                                <div>
+                                    <strong>Shopping & Banking</strong><br>
+                                    <small>Independent shopping and basic banking skills</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-bus"></i></div>
+                                <div>
+                                    <strong>Transportation</strong><br>
+                                    <small>Using public transport and navigation skills</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-users"></i></div>
+                                <div>
+                                    <strong>Social Interaction</strong><br>
+                                    <small>Community participation and social relationships</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="level-card">
+                            <div class="level-header">
+                                <div class="level-title">Level 5</div>
+                                <div class="level-focus">Vocational Skills</div>
+                                <div class="level-badge">Work Preparation</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--intellectual-theme);">Work Skills & Entrepreneurship</h5>
+                            <p class="mb-3">Preparation for employment through practical work skills, job training, and entrepreneurship development.</p>
+                            
+                            <h6 class="mb-2">Vocational Areas:</h6>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-seedling"></i></div>
+                                <div>
+                                    <strong>Gardening & Agriculture</strong><br>
+                                    <small>Vegetable production and agricultural skills</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-utensils"></i></div>
+                                <div>
+                                    <strong>Hospitality Services</strong><br>
+                                    <small>Food service and hospitality industry skills</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                                <div>
+                                    <strong>Creative Arts & Crafts</strong><br>
+                                    <small>Pottery, needlework, and craft production</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="level-card">
+                            <div class="level-header">
+                                <div class="level-title">Level 6</div>
+                                <div class="level-focus">Advanced Independence</div>
+                                <div class="level-badge">Life Mastery</div>
+                            </div>
+                            <h5 class="mb-3" style="color: var(--intellectual-theme);">Advanced Life Management</h5>
+                            <p class="mb-3">Comprehensive independence skills including decision-making, problem-solving, and advanced community participation.</p>
+                            
+                            <h6 class="mb-2">Advanced Skills:</h6>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                                <div>
+                                    <strong>Decision Making</strong><br>
+                                    <small>Problem-solving and independent choices</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-handshake"></i></div>
+                                <div>
+                                    <strong>Advocacy & Self-Representation</strong><br>
+                                    <small>Self-advocacy and rights awareness</small>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-home"></i></div>
+                                <div>
+                                    <strong>Independent Living</strong><br>
+                                    <small>Full household and life management skills</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Development -->
+        <section class="content-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Practical Skills Training</h2>
+                        <p class="section-subtitle">Hands-on learning opportunities developing employable skills and entrepreneurship</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="skills-card">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h5>Creative Arts & Crafts</h5>
+                            </div>
+                            <div class="skills-body">
+                                <p class="mb-3">Traditional and contemporary arts and crafts training developing fine motor skills, creativity, and marketable products.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Pottery and ceramics</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Traditional needlework</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Painting and drawing</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Product design and marketing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="skills-card">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <h5>Gardening & Agriculture</h5>
+                            </div>
+                            <div class="skills-body">
+                                <p class="mb-3">Comprehensive agricultural training including vegetable production, sustainable farming practices, and agricultural business principles.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Vegetable garden management</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Soil preparation and planting</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Crop harvesting and storage</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Agricultural tool usage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="skills-card">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <h5>Hospitality & Food Service</h5>
+                            </div>
+                            <div class="skills-body">
+                                <p class="mb-3">Practical hospitality training including food preparation, service skills, and basic catering for employment opportunities.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Basic cooking and baking</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Food safety and hygiene</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Table service and presentation</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Kitchen organization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="skills-card">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <h5>Entrepreneurship Training</h5>
+                            </div>
+                            <div class="skills-body">
+                                <p class="mb-3">Business skills development including product creation, pricing, sales techniques, and small business management.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Product development and pricing</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Basic sales and customer service</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Money handling and record keeping</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="skills-card">
+                            <div class="skills-header">
+                                <div class="skills-icon">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <h5>Community Service Skills</h5>
+                            </div>
+                            <div class="skills-body">
+                                <p class="mb-3">Training in community service roles including assistance work, cleaning services, and supportive employment opportunities.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i>Workplace behavior and etiquette</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Following instructions and routines</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Teamwork and cooperation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Success Stories -->
+        <section class="content-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Success Stories</h2>
+                        <p class="section-subtitle">Celebrating independence and achievement of our learners</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="success-card">
+                            <div class="success-quote">
+                                My son learned to cook and manage his own household. He now lives independently and even helps his neighbors with cooking. Thiboloha gave him skills for life.
+                            </div>
+                            <div class="success-author">Parent of Level 6 Graduate</div>
+                            <div class="success-achievement">Independent Living • Community Integration Success</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="success-card">
+                            <div class="success-quote">
+                                Through the arts and crafts program, my daughter discovered her talent for pottery. She now sells her products at local markets and supports herself.
+                            </div>
+                            <div class="success-author">Parent of Level 5 Graduate</div>
+                            <div class="success-achievement">Entrepreneurship Success • Creative Arts Business</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="success-card">
+                            <div class="success-quote">
+                                The gardening skills he learned at Thiboloha transformed our family's life. He now manages our vegetable garden and sells surplus produce to the community.
+                            </div>
+                            <div class="success-author">Parent of Level 4 Graduate</div>
+                            <div class="success-achievement">Agricultural Success • Family Business Contribution</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="success-card">
+                            <div class="success-quote">
+                                She learned to communicate her needs clearly and now advocates for herself in the community. The confidence she gained at Thiboloha changed everything.
+                            </div>
+                            <div class="success-author">Parent of Level 3 Graduate</div>
+                            <div class="success-achievement">Self-Advocacy Success • Communication Development</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Support Services -->
+        <section class="content-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Comprehensive Support Services</h2>
+                        <p class="section-subtitle">Holistic support ensuring success for learners with intellectual barriers</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="text-center">
+                            <div class="skills-icon mb-3" style="background: var(--intellectual-theme); margin: 0 auto;">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <h5>Individual Assessment</h5>
+                            <p>Comprehensive assessment determining each learner's abilities, interests, and appropriate level placement for optimal learning outcomes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="text-center">
+                            <div class="skills-icon mb-3" style="background: var(--secondary-green); margin: 0 auto;">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h5>Family Support & Training</h5>
+                            <p>Regular family training sessions on supporting independence at home, behavior management, and continuation of school learning.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4">
+                        <div class="text-center">
+                            <div class="skills-icon mb-3" style="background: var(--accent-gold); margin: 0 auto;">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h5>Progress Monitoring</h5>
+                            <p>Continuous assessment and tracking of skill development with regular progress reports and goal adjustment as needed.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="text-center">
+                            <div class="skills-icon mb-3" style="background: var(--primary-blue); margin: 0 auto;">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h5>Social Skills Development</h5>
+                            <p>Structured social skills training through group activities, peer interaction, and community-based learning opportunities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="text-center">
+                            <div class="skills-icon mb-3" style="background: var(--intellectual-theme); margin: 0 auto;">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h5>Transition Planning</h5>
+                            <p>Comprehensive preparation for post-school life including employment placement, independent living support, and ongoing community connections.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Other Programs Navigation -->
+        <section class="program-nav">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h3 style="color: var(--primary-blue);">Explore Our Other Programs</h3>
+                        <p class="text-muted">Discover comprehensive special needs education across all disability areas</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                        <a href="deaf-program.html" class="program-nav-item">
+                            <div class="program-nav-icon nav-deaf">
+                                <i class="fas fa-hands"></i>
+                            </div>
+                            <h6>Deaf Learners Program</h6>
+                            <p class="small mb-0">SASL education and deaf culture integration</p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-3">
+                        <a href="blind-program.html" class="program-nav-item">
+                            <div class="program-nav-icon nav-blind">
+                                <i class="fas fa-braille"></i>
+                            </div>
+                            <h6>Blind Learners Program</h6>
+                            <p class="small mb-0">Braille literacy and adaptive technology education</p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-3">
+                        <a href="autistic-program.html" class="program-nav-item">
+                            <div class="program-nav-icon nav-autism">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <h6>Autistic Learners Program</h6>
+                            <p class="small mb-0">Structured learning for autism spectrum learners</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="display-4 fw-bold mb-4">Ready to Empower Independence?</h2>
+                        <p class="lead mb-5">
+                            Give your child the practical skills and confidence needed for a meaningful, independent life. Our individualized approach meets each learner where they are and helps them reach their full potential.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="admissions.html" class="btn-cta">Start Application Process</a>
+                            <a href="contact.html" class="btn-cta">Schedule a Visit</a>
+                            <a href="contact.html" class="btn-outline-cta">View Our Facilities</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--dark-gray); color: white; padding: 60px 0 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Contact Information</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>
+                        P.O. Box 829<br>
+                        Witsieshoek, 9870<br>
+                        Free State, South Africa</p>
+                        
+                        <p><i class="fas fa-phone me-2"></i>
+                        (058) 713 0048 / 713 2821</p>
+                        
+                        <p><i class="fas fa-envelope me-2"></i>
+                        thiboloha@lantic.net</p>
+                    </address>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/" style="color: rgba(255,255,255,0.8); text-decoration: none;">Home</a></li>
+                        <li class="mb-2"><a href="/about" style="color: rgba(255,255,255,0.8); text-decoration: none;">About Us</a></li>
+                        <li class="mb-2"><a href="/programs" style="color: rgba(255,255,255,0.8); text-decoration: none;">Programs</a></li>
+                        <li class="mb-2"><a href="/admissions" style="color: rgba(255,255,255,0.8); text-decoration: none;">Admissions</a></li>
+                        <li class="mb-2"><a href="/gallery" style="color: rgba(255,255,255,0.8); text-decoration: none;">Gallery</a></li>
+                        <li class="mb-2"><a href="/news" style="color: rgba(255,255,255,0.8); text-decoration: none;">News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Our Programs</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/programs/deaf-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Deaf Learners</a></li>
+                        <li class="mb-2"><a href="/programs/blind-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Blind Learners</a></li>
+                        <li class="mb-2"><a href="/programs/autistic-learners" style="color: rgba(255,255,255,0.8); text-decoration: none;">Autistic Learners</a></li>
+                        <li class="mb-2"><a href="/programs/intellectual-barriers" style="color: var(--intellectual-theme); text-decoration: none; font-weight: 600;">Intellectual Barriers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Follow Us</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" aria-label="Facebook" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="small">Stay connected for updates and success stories from our amazing learners.</p>
+                </div>
+            </div>
+            
+            <hr style="margin: 2rem 0; border-color: rgba(255,255,255,0.2);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Thiboloha Special School. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <a href="/privacy" style="color: rgba(255,255,255,0.8); margin-right: 2rem;">Privacy Policy</a>
+                        <a href="/accessibility" style="color: rgba(255,255,255,0.8);">Accessibility Statement</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Same JavaScript functionality as other program pages
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            const targets = [6, 100, 25, 50];
+            
+            statNumbers.forEach((stat, index) => {
+                const target = targets[index];
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    
+                    if (index === 1) {
+                        stat.textContent = Math.floor(current) + '%';
+                    } else if (index === 2) {
+                        stat.textContent = Math.floor(current) + '+';
+                    } else {
+                        stat.textContent = Math.floor(current);
+                    }
+                }, 50);
+            });
+        }
+        
+        const statsSection = document.querySelector('.stat-highlight');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+        
+        const contentSections = document.querySelectorAll('.level-card, .skills-card, .success-card');
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        contentSections.forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            sectionObserver.observe(section);
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.btn-cta, .btn-outline-cta');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('/')) {
+                        this.style.opacity = '0.7';
+                        setTimeout(() => {
+                            this.style.opacity = '1';
+                        }, 200);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
