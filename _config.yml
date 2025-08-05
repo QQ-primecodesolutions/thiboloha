@@ -1,0 +1,49 @@
+# GitHub Pages Configuration for Thiboloha Special School
+
+# Site settings
+title: "Thiboloha Special School"
+description: "Excellence in Special Needs Education - Serving deaf, blind, autistic, and intellectually impaired learners in Free State, South Africa"
+url: "https://qq-primecodesolutions.github.io"
+baseurl: "/thiboloha"
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+lang: en_ZA
+locale: en_ZA
+timezone: Africa/Johannesburg
+
+# Social media
+social:
+  name: "Thiboloha Special School"
+  links:
+    - "https://www.facebook.com/thibolohschool" 
+    - "https://www.tiktok.com/@thibolohschool"
+
+# Contact information
+contact:
+  phone: "+27-58-713-0048"
+  email: "thiboloha@lantic.net"
+  address: "P.O. Box 829, Witsieshoek, 9870, Free State, South Africa"
+
+# MIME type configurations for GitHub Pages
+include:
+  - "_headers"
+  - "sitemap.xml"
+  - "robots.txt"
+
+# Exclude files from build
+exclude:
+  - "README.md"
+  - "CLAUDE.md"
+  - "seo/"
+  - "admin/"
+  - "contact/"
