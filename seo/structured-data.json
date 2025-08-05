@@ -1,0 +1,113 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Thiboloha Special School",
+  "alternateName": "Thiboloha Special School for Learners with Special Educational Needs",
+  "description": "A special needs school providing excellence in education for deaf, blind, autistic, and intellectually impaired learners for over 50 years.",
+  "url": "https://qq-primecodesolutions.github.io/thiboloha/",
+  "logo": "https://qq-primecodesolutions.github.io/thiboloha/assets/images/logo.png",
+  "image": "https://qq-primecodesolutions.github.io/thiboloha/assets/images/hero-image.jpg",
+  "telephone": "+27-58-713-0048",
+  "email": "thiboloha@lantic.net",
+  "foundingDate": "1974",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "P.O. Box 829",
+    "addressLocality": "Witsieshoek",
+    "postalCode": "9870",
+    "addressRegion": "Free State",
+    "addressCountry": "ZA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-28.7167",
+    "longitude": "28.9167"
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Free State",
+    "containedInPlace": {
+      "@type": "Country",
+      "name": "South Africa"
+    }
+  },
+  "educationalCredentialAwarded": [
+    "National Senior Certificate",
+    "FET Certificate"
+  ],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Special Needs Education Certification"
+  },
+  "numberOfStudents": "200+",
+  "alumni": [
+    {
+      "@type": "Person",
+      "description": "Graduates working in universities, hospitals, courts, and various industries across South Africa"
+    }
+  ],
+  "award": [
+    "100% NSC Pass Rate (2011-2024)",
+    "Recognition for Excellence in Special Needs Education"
+  ],
+  "programOffered": [
+    {
+      "@type": "EducationalProgram",
+      "name": "Deaf Learners Program",
+      "description": "Comprehensive education using South African Sign Language (SASL) from preprimary through FET",
+      "educationalLevel": "Preprimary to Grade 12 and FET",
+      "teaches": "South African Sign Language, Technical Skills, National Curriculum"
+    },
+    {
+      "@type": "EducationalProgram", 
+      "name": "Blind Learners Program",
+      "description": "Specialized education for visually impaired learners with Braille instruction and mobility training",
+      "educationalLevel": "Preprimary to Grade 12 and FET",
+      "teaches": "Braille, Mobility Training, Adaptive Technology, National Curriculum"
+    },
+    {
+      "@type": "EducationalProgram",
+      "name": "Autistic Learners Program", 
+      "description": "Structured learning environment with individualized support for learners on the autism spectrum",
+      "educationalLevel": "Preprimary to Grade 12",
+      "teaches": "Social Skills, Communication, Sensory Integration, National Curriculum"
+    },
+    {
+      "@type": "EducationalProgram",
+      "name": "Intellectual Barriers Program",
+      "description": "Life skills, creative arts, and practical subjects for learners with intellectual disabilities",
+      "educationalLevel": "All levels",
+      "teaches": "Life Skills, Creative Arts, Hospitality Training, Practical Subjects"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/thibolohschool",
+    "https://www.tiktok.com/@thibolohschool"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+27-58-713-0048",
+    "contactType": "customer service",
+    "email": "thiboloha@lantic.net",
+    "availableLanguage": ["English", "Afrikaans", "Sesotho"]
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Educational Programs",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Special Needs Education",
+          "courseCode": "SNE",
+          "description": "Comprehensive special needs education programs"
+        }
+      }
+    ]
+  },
+  "memberOf": {
+    "@type": "Organization",
+    "name": "South African Department of Basic Education"
+  }
+}

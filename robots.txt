@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://qq-primecodesolutions.github.io/thiboloha/sitemap.xml
+
+# Block access to admin and development files
+Disallow: /admin/
+Disallow: /contact/
+Disallow: *.php
+Disallow: /seo/
+
+# Allow all assets
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: /images/

@@ -47,17 +47,35 @@ php -S localhost:8000
 python -m http.server 8000
 # or
 npx serve .
+
+# For Windows development (Git Bash/MinGW):
+# Navigate to project directory and serve with Python
+cd "/c/Users/Admin1/Desktop/Thiboloha School/thiboloha"
+python -m http.server 8000
 ```
 
 ### File Organization
 
 - `/assets/css/` - All stylesheets including program-specific styles
 - `/assets/js/` - JavaScript files (contact.js, scripts.js)
-- `/assets/images/` - Image assets
+- `/assets/images/` - Image assets (currently missing)
 - `/admin/` - PHP admin panel (minimal implementation)
-- `/contact/` - PHP contact form handler
+- `/contact/` - PHP contact form handler (currently minimal)
 - `/images/` - Additional image assets (legacy structure)
 - `/css/` and `/js/` - Legacy asset directories with Bootstrap
+
+### CSS Architecture
+
+The site uses a theme-based CSS architecture with CSS custom properties:
+
+- **Main stylesheet** (`style.css`): Base styles with CSS variables for colors
+- **Program-specific stylesheets**: Each program has dedicated styling
+  - `autistic-style.css` - Autism program theming
+  - `blind-style.css` - Blind learners program theming  
+  - `deafstyle.css` - Deaf learners program theming (note: filename inconsistency)
+  - `inter-style.css` - Intellectual barriers program theming
+- **Contact styling** (`contact.css`): Dedicated contact page styles
+- **Bootstrap integration**: Uses Bootstrap 5 CDN with custom overrides
 
 ### Content Structure
 
@@ -77,10 +95,44 @@ According to README.md, the site is planned for multi-phase development:
 - **Phase 3**: PHP/MySQL backend for content management
 - **Phase 4**: Advanced features like multi-language support
 
+### JavaScript Architecture
+
+The codebase uses vanilla JavaScript with a focus on accessibility and progressive enhancement:
+
+- **contact.js**: Comprehensive multi-step contact form with validation
+  - Form validation with real-time feedback
+  - Multi-step wizard interface with progress tracking
+  - Phone number formatting for South African numbers
+  - Modal dialogs for scheduling visits
+  - FAQ accordion functionality
+  - Ripple effects and smooth animations
+  - Keyboard navigation support (Alt+Arrow keys for form steps)
+  - Error handling with user-friendly messages
+
+- **scripts.js**: Main site functionality (currently minimal)
+
+### PHP Components
+
+Minimal PHP backend with placeholder implementations:
+
+- **admin/login.php** and **admin/dashboard.php**: Empty admin panel files
+- **contact/contact.php**: Contact form handler (currently minimal)
+
+These files need implementation for a fully functional backend.
+
+### Development Notes
+
+- **Asset Structure**: Dual asset directories (`/assets/` and legacy `/css/`, `/js/`)
+- **Image Handling**: Logo referenced as `/assets/images/logo.png` but stored in `/images/`
+- **CSS Naming**: Inconsistent naming (e.g., `deafstyle.css` vs `deaf-style.css`)
+- **React Preparation**: Empty `/react/` directory structure exists for future implementation
+
 ### Testing
 
 No automated testing framework is currently in place. Manual testing involves:
 - Cross-browser compatibility testing
-- Accessibility compliance testing
+- Accessibility compliance testing (WCAG 2.1 AA standards)
 - Mobile responsiveness verification
 - PHP form functionality testing (when using local server)
+- Screen reader testing for accessibility features
+- Multi-program theme testing
